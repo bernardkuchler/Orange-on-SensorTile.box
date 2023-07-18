@@ -1,0 +1,98 @@
+import pandas as pd
+dfIzhod = []
+
+def klasifikacija(vhodnaVrednost): 
+	if vhodnaVrednost["F2_MEAN_on_ACC_Y"] <= 0.00840322: 
+		if vhodnaVrednost["F8_VAR_on_ACC_V"] <= 0.130886: 
+			if vhodnaVrednost["F10_MIN_on_ACC_Y"] <= -0.839918: 
+				if vhodnaVrednost["F13_MAX_on_ACC_X"] <= -0.298938: 
+					if vhodnaVrednost["F5_VAR_on_ACC_X"] <= 0.0664063:
+						dfIzhod.append("Vati") 
+					elif vhodnaVrednost["F5_VAR_on_ACC_X"] > 0.0664063: 
+						if vhodnaVrednost["F7_VAR_on_ACC_Z"] <= 0.0620117: 
+							if vhodnaVrednost["F1_MEAN_on_ACC_X"] <= -1.0127:
+								dfIzhod.append("Jaz") 
+							elif vhodnaVrednost["F1_MEAN_on_ACC_X"] > -1.0127:
+								dfIzhod.append("Vati") 
+						elif vhodnaVrednost["F7_VAR_on_ACC_Z"] > 0.0620117: 
+							if vhodnaVrednost["F9_MIN_on_ACC_X"] <= -1.64355:
+								dfIzhod.append("Sestra") 
+							elif vhodnaVrednost["F9_MIN_on_ACC_X"] > -1.64355:
+								dfIzhod.append("Mami") 
+				elif vhodnaVrednost["F13_MAX_on_ACC_X"] > -0.298938: 
+					if vhodnaVrednost["F1_MEAN_on_ACC_X"] <= -0.851563: 
+						if vhodnaVrednost["F1_MEAN_on_ACC_X"] <= -1.00391: 
+							if vhodnaVrednost["F1_MEAN_on_ACC_X"] <= -1.01074:
+								dfIzhod.append("Vati") 
+							elif vhodnaVrednost["F1_MEAN_on_ACC_X"] > -1.01074:
+								dfIzhod.append("Jaz") 
+						elif vhodnaVrednost["F1_MEAN_on_ACC_X"] > -1.00391:
+							dfIzhod.append("Mami") 
+					elif vhodnaVrednost["F1_MEAN_on_ACC_X"] > -0.851563:
+						dfIzhod.append("Mirovanje") 
+			elif vhodnaVrednost["F10_MIN_on_ACC_Y"] > -0.839918: 
+				if vhodnaVrednost["F3_MEAN_on_ACC_Z"] <= -0.0453391: 
+					if vhodnaVrednost["F9_MIN_on_ACC_X"] <= -1.65625: 
+						if vhodnaVrednost["F14_MAX_on_ACC_Y"] <= 0.449951: 
+							if vhodnaVrednost["F1_MEAN_on_ACC_X"] <= -1.08789:
+								dfIzhod.append("Vati") 
+							elif vhodnaVrednost["F1_MEAN_on_ACC_X"] > -1.08789:
+								dfIzhod.append("Mami") 
+						elif vhodnaVrednost["F14_MAX_on_ACC_Y"] > 0.449951: 
+							if vhodnaVrednost["F1_MEAN_on_ACC_X"] <= -0.959473:
+								dfIzhod.append("Jaz") 
+							elif vhodnaVrednost["F1_MEAN_on_ACC_X"] > -0.959473:
+								dfIzhod.append("Mami") 
+					elif vhodnaVrednost["F9_MIN_on_ACC_X"] > -1.65625: 
+						if vhodnaVrednost["F1_MEAN_on_ACC_X"] <= -1.02051:
+							dfIzhod.append("Mami") 
+						elif vhodnaVrednost["F1_MEAN_on_ACC_X"] > -1.02051:
+							dfIzhod.append("Vati") 
+				elif vhodnaVrednost["F3_MEAN_on_ACC_Z"] > -0.0453391:
+					dfIzhod.append("Mami") 
+		elif vhodnaVrednost["F8_VAR_on_ACC_V"] > 0.130886: 
+			if vhodnaVrednost["F6_VAR_on_ACC_Y"] <= 0.0873474: 
+				if vhodnaVrednost["F2_MEAN_on_ACC_Y"] <= -0.132202: 
+					if vhodnaVrednost["F7_VAR_on_ACC_Z"] <= 0.115051: 
+						if vhodnaVrednost["F1_MEAN_on_ACC_X"] <= -0.949219:
+							dfIzhod.append("Vati") 
+						elif vhodnaVrednost["F1_MEAN_on_ACC_X"] > -0.949219: 
+							if vhodnaVrednost["F1_MEAN_on_ACC_X"] <= -0.914551:
+								dfIzhod.append("Mami") 
+							elif vhodnaVrednost["F1_MEAN_on_ACC_X"] > -0.914551:
+								dfIzhod.append("Vati") 
+					elif vhodnaVrednost["F7_VAR_on_ACC_Z"] > 0.115051: 
+						if vhodnaVrednost["F6_VAR_on_ACC_Y"] <= 0.0690308:
+							dfIzhod.append("Mami") 
+						elif vhodnaVrednost["F6_VAR_on_ACC_Y"] > 0.0690308:
+							dfIzhod.append("Sestra") 
+				elif vhodnaVrednost["F2_MEAN_on_ACC_Y"] > -0.132202: 
+					if vhodnaVrednost["F15_MAX_on_ACC_Z"] <= 1.21582: 
+						if vhodnaVrednost["F1_MEAN_on_ACC_X"] <= -0.964355:
+							dfIzhod.append("Mami") 
+						elif vhodnaVrednost["F1_MEAN_on_ACC_X"] > -0.964355: 
+							if vhodnaVrednost["F2_MEAN_on_ACC_Y"] <= -0.128174:
+								dfIzhod.append("Mami") 
+							elif vhodnaVrednost["F2_MEAN_on_ACC_Y"] > -0.128174:
+								dfIzhod.append("Sestra") 
+					elif vhodnaVrednost["F15_MAX_on_ACC_Z"] > 1.21582: 
+						if vhodnaVrednost["F2_MEAN_on_ACC_Y"] <= -0.110779:
+							dfIzhod.append("Mami") 
+						elif vhodnaVrednost["F2_MEAN_on_ACC_Y"] > -0.110779:
+							dfIzhod.append("Sestra") 
+			elif vhodnaVrednost["F6_VAR_on_ACC_Y"] > 0.0873474: 
+				if vhodnaVrednost["F13_MAX_on_ACC_X"] <= -0.505696: 
+					if vhodnaVrednost["F6_VAR_on_ACC_Y"] <= 0.11261:
+						dfIzhod.append("Sestra") 
+					elif vhodnaVrednost["F6_VAR_on_ACC_Y"] > 0.11261:
+						dfIzhod.append("Vati") 
+				elif vhodnaVrednost["F13_MAX_on_ACC_X"] > -0.505696: 
+					if vhodnaVrednost["F14_MAX_on_ACC_Y"] <= 0.259033:
+						dfIzhod.append("Vati") 
+					elif vhodnaVrednost["F14_MAX_on_ACC_Y"] > 0.259033:
+						dfIzhod.append("Sestra") 
+	elif vhodnaVrednost["F2_MEAN_on_ACC_Y"] > 0.00840322: 
+		if vhodnaVrednost["F6_VAR_on_ACC_Y"] <= 6.81505e-005:
+			dfIzhod.append("Mirovanje") 
+		elif vhodnaVrednost["F6_VAR_on_ACC_Y"] > 6.81505e-005:
+			dfIzhod.append("Jaz") 

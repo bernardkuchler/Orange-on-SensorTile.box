@@ -1,0 +1,11 @@
+randomforestjakostgibanja.c:433:9:ai_randomforestjakostgibanja_get_info	4
+randomforestjakostgibanja.c:479:9:ai_randomforestjakostgibanja_get_report	4
+randomforestjakostgibanja.c:525:10:ai_randomforestjakostgibanja_get_error	1
+randomforestjakostgibanja.c:531:10:ai_randomforestjakostgibanja_create	1
+randomforestjakostgibanja.c:575:12:ai_randomforestjakostgibanja_inputs_get	2
+randomforestjakostgibanja.c:585:12:ai_randomforestjakostgibanja_outputs_get	2
+randomforestjakostgibanja.c:595:11:ai_randomforestjakostgibanja_destroy	1
+randomforestjakostgibanja.c:601:9:ai_randomforestjakostgibanja_init	4
+randomforestjakostgibanja.c:541:10:ai_randomforestjakostgibanja_create_and_init	8
+randomforestjakostgibanja.c:618:8:ai_randomforestjakostgibanja_run	1
+randomforestjakostgibanja.c:625:8:ai_randomforestjakostgibanja_forward	1

@@ -1,0 +1,200 @@
+{
+    "_allocate_inputs": 4,
+    "_allocate_outputs": 4,
+    "cli_parameters": "validate --name modelstrojnegaucenja -m F:/FRI_novSSD/Diploma/Testiranje idej Orange/NOVO-RandomForestHojaOseb4GONNX-NoviAtributi.onnx --type onnx --compression none --verbosity 1 --workspace C:\\Users\\Adminj\\AppData\\Local\\Temp\\mxAI_workspace2871144732395002033702661168277310 --output C:\\Users\\Adminj\\.stm32cubemx\\network_output --allocate-inputs --allocate-outputs --save-csv --mode stm32 --valinput F:/FRI_novSSD/Diploma/ZajetiPodatki-hoja/NOVI-PODATKI-HOJA-4G/NEAIS-testniPodatki-loceni/Mami-testni-vse.csv --desc 115200",
+    "cli_version": {
+        "major": 1,
+        "micro": 0,
+        "minor": 7
+    },
+    "cli_version_str": "1.7.0",
+    "compression": {
+        "factor": null,
+        "layers": {}
+    },
+    "date_time": "Sun Jun 18 17:14:24 2023",
+    "error": 0,
+    "error_str": [],
+    "exec_cmd": "validate",
+    "exec_duration": 0.0,
+    "hash": "0b8a42b0279cc5c542ffc4f0d0eda74b",
+    "inputs": [
+        "float_input"
+    ],
+    "layers": [
+        {
+            "c_id": [],
+            "extras": {
+                "n_macc": 0,
+                "n_params": 0,
+                "psize": 0,
+                "rom_output": {
+                    "c_size": 64,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        1,
+                        1,
+                        16,
+                        1
+                    ]
+                },
+                "rom_size": 0
+            },
+            "id": 0,
+            "inputs": [],
+            "name": "float_input",
+            "original": "",
+            "type": "Input"
+        },
+        {
+            "c_id": [
+                0
+            ],
+            "extras": {
+                "n_macc": 204,
+                "n_params": 31710,
+                "psize": 79954,
+                "rom_size": 79972
+            },
+            "id": 1,
+            "inputs": [
+                "float_input"
+            ],
+            "name": "label",
+            "original": "TreeEnsembleClassifier",
+            "type": "TreeEnsembleClassifier"
+        },
+        {
+            "c_id": [
+                1
+            ],
+            "extras": {
+                "n_macc": 0,
+                "n_params": 5,
+                "psize": 5,
+                "rom_output": {
+                    "c_size": 40,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        1,
+                        5,
+                        2,
+                        1
+                    ]
+                },
+                "rom_size": 8
+            },
+            "id": 2,
+            "inputs": [
+                "label"
+            ],
+            "name": "output_probability",
+            "original": "ZipMap",
+            "type": "ZipMap"
+        },
+        {
+            "c_id": [],
+            "extras": {
+                "n_macc": 2,
+                "n_params": 0,
+                "psize": 0,
+                "rom_size": 0
+            },
+            "id": 3,
+            "inputs": [
+                "label"
+            ],
+            "name": "output_label",
+            "original": "Cast",
+            "type": "Cast"
+        }
+    ],
+    "model_files": [
+        "F:\\FRI_novSSD\\Diploma\\Testiranje idej Orange\\NOVO-RandomForestHojaOseb4GONNX-NoviAtributi.onnx"
+    ],
+    "model_n_params": 31715,
+    "model_name": "NOVORandomForestHojaOseb4GONNXNoviAtributi",
+    "model_size": 79959,
+    "model_type": "onnx",
+    "name": "modelstrojnegaucenja",
+    "outputs": [
+        "label0",
+        "output_probability"
+    ],
+    "ram_io_size": [
+        64,
+        44
+    ],
+    "ram_size": [
+        88,
+        88
+    ],
+    "report_version": 1.1,
+    "rom_cfact": 1.0,
+    "rom_heap_inspector": 2048,
+    "rom_inputs": [
+        {
+            "c_size": 64,
+            "c_type": "float",
+            "name": "float_input"
+        }
+    ],
+    "rom_n_macc": 204,
+    "rom_outputs": [
+        {
+            "c_size": 4,
+            "c_type": "int32_t",
+            "name": "label0"
+        },
+        {
+            "c_size": 40,
+            "c_type": "float",
+            "name": "output_probability"
+        }
+    ],
+    "rom_size": 79980,
+    "strategy": "heap_overlay",
+    "tools_api_version": {
+        "major": 1,
+        "micro": 0,
+        "minor": 7
+    },
+    "tools_version": {
+        "extra": "19451",
+        "major": 8,
+        "micro": 1,
+        "minor": 0
+    },
+    "val_error": 319868960.0,
+    "val_error_desc": "x-cross (l2r) #1",
+    "val_metrics": [
+        {
+            "acc": "n.a.",
+            "cos": NaN,
+            "desc": "X-cross #1",
+            "l2r": 319868960.0,
+            "mae": 1.2694804668426514,
+            "mean": 1.2694804668426514,
+            "nse": -2.1470745591683724,
+            "rmse": 1.536355972290039,
+            "std": 0.8660407066345215,
+            "ts_name": "label0, ai_i32, (1,1,1,1), m_id=[1]"
+        },
+        {
+            "acc": "n.a.",
+            "cos": 0.8806402683258057,
+            "desc": "X-cross #2",
+            "l2r": 0.9848409295082092,
+            "mae": 57.0,
+            "mean": -56.79999923706055,
+            "nse": -5368.014269451967,
+            "rmse": 100.14578247070312,
+            "std": 82.48661804199219,
+            "ts_name": "output_probability, ai_float, (1,1,5,2), m_id=[2]"
+        }
+    ]
+}

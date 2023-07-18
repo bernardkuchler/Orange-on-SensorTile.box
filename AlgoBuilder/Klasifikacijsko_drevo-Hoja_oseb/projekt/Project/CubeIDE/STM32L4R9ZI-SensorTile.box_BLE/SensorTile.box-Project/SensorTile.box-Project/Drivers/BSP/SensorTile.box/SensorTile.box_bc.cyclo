@@ -1,0 +1,15 @@
+SensorTile.box_bc.c:133:6:BSP_BC_ChrgPin_Init	1
+SensorTile.box_bc.c:144:9:BSP_BC_CmdSend	3
+SensorTile.box_bc.c:173:6:BSP_BC_ChgPinHasToggled	1
+SensorTile.box_bc.c:184:9:BSP_BC_IsChgPinToggling	2
+SensorTile.box_bc.c:366:6:BC_IO_Init	1
+SensorTile.box_bc.c:376:6:BC_IO_SW_SEL_Init	1
+SensorTile.box_bc.c:397:6:BC_IO_CHG_Init	1
+SensorTile.box_bc.c:419:6:BC_IO_CHG_DeInit	1
+SensorTile.box_bc.c:430:6:BC_CmdMng	9
+SensorTile.box_bc.c:507:6:BC_ChgPinFreqGet	1
+SensorTile.box_bc.c:524:6:BC_ChgPinFreq2ChgSts	1
+SensorTile.box_bc.c:548:6:BC_TIMx_Init	6
+SensorTile.box_bc.c:352:6:BC_InitCommon	1
+SensorTile.box_bc.c:124:6:BSP_BC_Init	1
+SensorTile.box_bc.c:752:6:TIM7_IRQHandler	1

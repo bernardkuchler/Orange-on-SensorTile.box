@@ -1,0 +1,11 @@
+#define MotionAC 0
+#define MotionAW 0
+#define MotionEC 0
+#define MotionGC 0
+#define MotionFX_6X 0
+#define MotionFX_9X 0
+#define MotionID 0
+#define MotionMC 0
+#define MotionPM 0
+#define MotionPW 0
+#define MotionTL 0

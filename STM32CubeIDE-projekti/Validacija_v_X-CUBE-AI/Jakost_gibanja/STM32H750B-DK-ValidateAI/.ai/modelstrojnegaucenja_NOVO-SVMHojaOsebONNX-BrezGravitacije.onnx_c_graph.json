@@ -1,0 +1,684 @@
+{
+    "activations": {
+        "heap_overlay_pool": {
+            "buffer_c_name": "NULL",
+            "buffer_c_name_addr": "NULL",
+            "buffer_data_size": 0,
+            "buffer_offsets": [
+                {
+                    "buffer_name": "float_input_output_array",
+                    "lite_tag": null,
+                    "offset": 0,
+                    "size": 64,
+                    "start_offset": 0
+                },
+                {
+                    "buffer_name": "label_scratch0_array",
+                    "lite_tag": null,
+                    "offset": 64,
+                    "size": 2916,
+                    "start_offset": 64
+                },
+                {
+                    "buffer_name": "label_output0_array",
+                    "lite_tag": null,
+                    "offset": 2980,
+                    "size": 4,
+                    "start_offset": 2980
+                },
+                {
+                    "buffer_name": "label_output1_array",
+                    "lite_tag": null,
+                    "offset": 2984,
+                    "size": 20,
+                    "start_offset": 2984
+                },
+                {
+                    "buffer_name": "output_probability_output_array",
+                    "lite_tag": null,
+                    "offset": 0,
+                    "size": 40,
+                    "start_offset": 0
+                },
+                {
+                    "buffer_name": "output_label_output_array",
+                    "lite_tag": null,
+                    "offset": 40,
+                    "size": 4,
+                    "start_offset": 40
+                }
+            ],
+            "pool_id": 0,
+            "pool_size": 3004
+        }
+    },
+    "activations_alignment": 4,
+    "c_activations_count": 1,
+    "c_arrays": [
+        {
+            "c_bits": 32,
+            "c_id": 0,
+            "c_mem_pool": "weights",
+            "c_size_in_byte": 40,
+            "c_type": "const float",
+            "format": "float32",
+            "is_const": true,
+            "mem_pool": "weights",
+            "n_items": 10,
+            "name": "label_rho_array",
+            "offset": 0,
+            "padded": true,
+            "raw_fmt": "(FLOAT, 32 bit, C Size: 32 bits)",
+            "size": 10,
+            "tensors": [
+                {
+                    "name": "label_rho",
+                    "shape": [
+                        1,
+                        10,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "zeros": 0
+        },
+        {
+            "c_bits": 32,
+            "c_id": 1,
+            "c_mem_pool": "**default**",
+            "c_size_in_byte": 2916,
+            "c_type": "float",
+            "format": "float32",
+            "is_const": false,
+            "mem_pool": "activations",
+            "n_items": 729,
+            "name": "label_scratch0_array",
+            "offset": 64,
+            "padded": true,
+            "raw_fmt": "(FLOAT, 32 bit, C Size: 32 bits)",
+            "size": 729,
+            "tensors": [
+                {
+                    "name": "label_scratch0",
+                    "shape": [
+                        1,
+                        1,
+                        1,
+                        729
+                    ]
+                }
+            ]
+        },
+        {
+            "c_bits": 8,
+            "c_id": 2,
+            "c_mem_pool": "weights",
+            "c_size_in_byte": 8,
+            "c_type": "const uint8_t",
+            "format": "u8",
+            "is_const": true,
+            "mem_pool": "weights",
+            "n_items": 5,
+            "name": "label_classlabels_ints_array",
+            "offset": 40,
+            "padded": true,
+            "raw_fmt": "(UNSIGNED, 8 bit, C Size: 8 bits)",
+            "size": 5,
+            "tensors": [
+                {
+                    "name": "label_classlabels_ints",
+                    "shape": [
+                        1,
+                        5,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "zeros": 1
+        },
+        {
+            "c_bits": 8,
+            "c_id": 3,
+            "c_mem_pool": "weights",
+            "c_size_in_byte": 8,
+            "c_type": "const uint8_t",
+            "format": "u8",
+            "is_const": true,
+            "mem_pool": "weights",
+            "n_items": 5,
+            "name": "label_vectors_per_class_array",
+            "offset": 48,
+            "padded": true,
+            "raw_fmt": "(UNSIGNED, 8 bit, C Size: 8 bits)",
+            "size": 5,
+            "tensors": [
+                {
+                    "name": "label_vectors_per_class",
+                    "shape": [
+                        1,
+                        5,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "zeros": 0
+        },
+        {
+            "c_bits": 32,
+            "c_id": 4,
+            "c_mem_pool": "weights",
+            "c_size_in_byte": 40,
+            "c_type": "const float",
+            "format": "float32",
+            "is_const": true,
+            "mem_pool": "weights",
+            "n_items": 10,
+            "name": "label_prob_a_array",
+            "offset": 56,
+            "padded": true,
+            "raw_fmt": "(FLOAT, 32 bit, C Size: 32 bits)",
+            "size": 10,
+            "tensors": [
+                {
+                    "name": "label_prob_a",
+                    "shape": [
+                        1,
+                        10,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "zeros": 0
+        },
+        {
+            "c_bits": 32,
+            "c_id": 5,
+            "c_mem_pool": "**default**",
+            "c_size_in_byte": 64,
+            "c_type": "float",
+            "format": "float32",
+            "io_type": "input",
+            "is_const": false,
+            "mem_pool": "activations",
+            "n_items": 16,
+            "name": "float_input_output_array",
+            "offset": 0,
+            "padded": true,
+            "raw_fmt": "(FLOAT, 32 bit, C Size: 32 bits)",
+            "size": 16,
+            "tensors": [
+                {
+                    "name": "float_input_output",
+                    "shape": [
+                        1,
+                        1,
+                        1,
+                        16
+                    ]
+                }
+            ]
+        },
+        {
+            "c_bits": 32,
+            "c_id": 6,
+            "c_mem_pool": "**default**",
+            "c_size_in_byte": 4,
+            "c_type": "float",
+            "format": "float32",
+            "is_const": false,
+            "mem_pool": "activations",
+            "n_items": 1,
+            "name": "label_output0_array",
+            "offset": 2980,
+            "padded": true,
+            "raw_fmt": "(FLOAT, 32 bit, C Size: 32 bits)",
+            "size": 1,
+            "tensors": [
+                {
+                    "name": "label_output0",
+                    "shape": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "c_bits": 32,
+            "c_id": 7,
+            "c_mem_pool": "weights",
+            "c_size_in_byte": 40,
+            "c_type": "const float",
+            "format": "float32",
+            "is_const": true,
+            "mem_pool": "weights",
+            "n_items": 10,
+            "name": "label_prob_b_array",
+            "offset": 96,
+            "padded": true,
+            "raw_fmt": "(FLOAT, 32 bit, C Size: 32 bits)",
+            "size": 10,
+            "tensors": [
+                {
+                    "name": "label_prob_b",
+                    "shape": [
+                        1,
+                        10,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "zeros": 0
+        },
+        {
+            "c_bits": 32,
+            "c_id": 8,
+            "c_mem_pool": "**default**",
+            "c_size_in_byte": 20,
+            "c_type": "float",
+            "format": "float32",
+            "is_const": false,
+            "mem_pool": "activations",
+            "n_items": 5,
+            "name": "label_output1_array",
+            "offset": 2984,
+            "padded": true,
+            "raw_fmt": "(FLOAT, 32 bit, C Size: 32 bits)",
+            "size": 5,
+            "tensors": [
+                {
+                    "name": "label_output1",
+                    "shape": [
+                        1,
+                        1,
+                        1,
+                        5
+                    ]
+                }
+            ]
+        },
+        {
+            "c_bits": 32,
+            "c_id": 9,
+            "c_mem_pool": "**default**",
+            "c_size_in_byte": 40,
+            "c_type": "float",
+            "format": "float32",
+            "io_type": "output",
+            "is_const": false,
+            "mem_pool": "activations",
+            "n_items": 10,
+            "name": "output_probability_output_array",
+            "offset": 0,
+            "padded": true,
+            "raw_fmt": "(FLOAT, 32 bit, C Size: 32 bits)",
+            "size": 10,
+            "tensors": [
+                {
+                    "name": "output_probability_output",
+                    "shape": [
+                        1,
+                        1,
+                        5,
+                        2
+                    ]
+                }
+            ]
+        },
+        {
+            "c_bits": 8,
+            "c_id": 10,
+            "c_mem_pool": "weights",
+            "c_size_in_byte": 8,
+            "c_type": "const uint8_t",
+            "format": "u8",
+            "is_const": true,
+            "mem_pool": "weights",
+            "n_items": 5,
+            "name": "output_probability_classlabels_ints_array",
+            "offset": 136,
+            "padded": true,
+            "raw_fmt": "(UNSIGNED, 8 bit, C Size: 8 bits)",
+            "size": 5,
+            "tensors": [
+                {
+                    "name": "output_probability_classlabels_ints",
+                    "shape": [
+                        1,
+                        1,
+                        1,
+                        5
+                    ]
+                }
+            ],
+            "zeros": 1
+        },
+        {
+            "c_bits": 32,
+            "c_id": 11,
+            "c_mem_pool": "**default**",
+            "c_size_in_byte": 4,
+            "c_type": "int32_t",
+            "format": "s32",
+            "io_type": "output",
+            "is_const": false,
+            "mem_pool": "activations",
+            "n_items": 1,
+            "name": "output_label_output_array",
+            "offset": 40,
+            "padded": true,
+            "raw_fmt": "(SIGNED, 32 bit, C Size: 32 bits)",
+            "size": 1,
+            "tensors": [
+                {
+                    "name": "output_label_output",
+                    "shape": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "c_bits": 32,
+            "c_id": 12,
+            "c_mem_pool": "weights",
+            "c_size_in_byte": 10496,
+            "c_type": "const float",
+            "format": "float32",
+            "is_const": true,
+            "mem_pool": "weights",
+            "n_items": 2624,
+            "name": "label_coefficients_array",
+            "offset": 144,
+            "padded": true,
+            "raw_fmt": "(FLOAT, 32 bit, C Size: 32 bits)",
+            "size": 2624,
+            "tensors": [
+                {
+                    "name": "label_coefficients",
+                    "shape": [
+                        1,
+                        2624,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "zeros": 1729
+        },
+        {
+            "c_bits": 32,
+            "c_id": 13,
+            "c_mem_pool": "weights",
+            "c_size_in_byte": 41984,
+            "c_type": "const float",
+            "format": "float32",
+            "is_const": true,
+            "mem_pool": "weights",
+            "n_items": 10496,
+            "name": "label_support_vectors_array",
+            "offset": 10640,
+            "padded": true,
+            "raw_fmt": "(FLOAT, 32 bit, C Size: 32 bits)",
+            "size": 10496,
+            "tensors": [
+                {
+                    "name": "label_support_vectors",
+                    "shape": [
+                        1,
+                        10496,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "zeros": 0
+        }
+    ],
+    "c_arrays_n": 14,
+    "c_intq_n": 0,
+    "c_layers": [
+        {
+            "c_code_emit": true,
+            "c_forward": "forward_svc",
+            "c_id": 0,
+            "layer_type": "svc",
+            "m_id": 1,
+            "macc": 31488,
+            "name": "label",
+            "next": "output_probability",
+            "op_by_type": {
+                "smul_f32_f32": 31488
+            },
+            "rom": 52616,
+            "tensors": {
+                "inputs": [
+                    "float_input_output"
+                ],
+                "outputs": [
+                    "label_output0",
+                    "label_output1"
+                ],
+                "scratchs": [
+                    "label_scratch0"
+                ],
+                "weights": [
+                    "label_coefficients",
+                    "label_support_vectors",
+                    "label_rho",
+                    "label_classlabels_ints",
+                    "label_vectors_per_class",
+                    "label_prob_a",
+                    "label_prob_b"
+                ]
+            },
+            "weight_sparsity": [
+                0.1314589665653495,
+                13160,
+                1730
+            ]
+        },
+        {
+            "c_code_emit": true,
+            "c_forward": "forward_zipmap",
+            "c_id": 1,
+            "layer_type": "zipmap",
+            "m_id": 4,
+            "macc": 0,
+            "name": "output_probability",
+            "next": "output_label",
+            "op_by_type": {
+                "smul_f32_u8": 0
+            },
+            "rom": 8,
+            "tensors": {
+                "inputs": [
+                    "label_output1"
+                ],
+                "outputs": [
+                    "output_probability_output"
+                ],
+                "scratchs": [],
+                "weights": [
+                    "output_probability_classlabels_ints"
+                ]
+            },
+            "weight_sparsity": [
+                0.19999999999999996,
+                5,
+                1
+            ]
+        },
+        {
+            "c_code_emit": true,
+            "c_forward": "forward_cast",
+            "c_id": 2,
+            "layer_type": "cast",
+            "m_id": 2,
+            "macc": 2,
+            "name": "output_label",
+            "next": "output_label",
+            "op_by_type": {
+                "conv_f32_s32": 2
+            },
+            "rom": 0,
+            "tensors": {
+                "inputs": [
+                    "label_output0"
+                ],
+                "outputs": [
+                    "output_label_output"
+                ],
+                "scratchs": [],
+                "weights": []
+            },
+            "weight_sparsity": [
+                0.0,
+                0,
+                0
+            ]
+        }
+    ],
+    "c_name": "modelstrojnegaucenja",
+    "c_nodes_n": 3,
+    "c_tensors_n": 14,
+    "c_weights_count": 1,
+    "c_weights_header": 0,
+    "compilation_options": {
+        "compression": "none",
+        "optimization": "balanced",
+        "options": [
+            "allocate-inputs",
+            "allocate-outputs"
+        ],
+        "target": "stm32h7"
+    },
+    "data_alignment": 4,
+    "date_time": "Sat Jun 24 11:21:32 2023",
+    "inputs": [
+        "float_input_output"
+    ],
+    "macc": 31490,
+    "memory_footprint": {
+        "activations": 3004,
+        "io": [
+            0,
+            0
+        ],
+        "kernel_flash": 31862,
+        "kernel_ram": 1868,
+        "series": "stm32h7",
+        "toolchain": "arm-none-eabi-gcc (GNU Tools for STM32 10.3-2021.10.20211105-1100) 10.3.1 20210824 (release)",
+        "toolchain_flash": 3030,
+        "toolchain_ram": 0,
+        "weights": 52624
+    },
+    "memory_pools": [],
+    "model_fmt": "float",
+    "model_name": "novosvmhojaosebonnxbrezgravitacije",
+    "model_signature": "9f90a327dbae70ba81969339dfb28f75",
+    "outputs": [
+        "output_label_output",
+        "output_probability_output"
+    ],
+    "params_alignment": 4,
+    "stm_ai_version": {
+        "extra": "19451",
+        "major": 8,
+        "micro": 1,
+        "minor": 0
+    },
+    "tool_api_version": {
+        "major": 1,
+        "micro": 0,
+        "minor": 5
+    },
+    "tool_version": {
+        "major": 1,
+        "micro": 0,
+        "minor": 7
+    },
+    "type": "onnx",
+    "version": "1.2",
+    "weights": {
+        "weights_array": {
+            "buffer_c_count": 6578,
+            "buffer_c_data": [],
+            "buffer_c_name": "s_modelstrojnegaucenja_weights_array_u64",
+            "buffer_c_name_addr": "s_modelstrojnegaucenja_weights_array_u64",
+            "buffer_c_type": "u64",
+            "buffer_crc": 0,
+            "buffer_data_size": 52624,
+            "buffer_offsets": [
+                {
+                    "buffer_name": "label_rho_array",
+                    "lite_tag": null,
+                    "offset": 0,
+                    "size": 40,
+                    "start_offset": 0
+                },
+                {
+                    "buffer_name": "label_classlabels_ints_array",
+                    "lite_tag": null,
+                    "offset": 40,
+                    "size": 8,
+                    "start_offset": 40
+                },
+                {
+                    "buffer_name": "label_vectors_per_class_array",
+                    "lite_tag": null,
+                    "offset": 48,
+                    "size": 8,
+                    "start_offset": 48
+                },
+                {
+                    "buffer_name": "label_prob_a_array",
+                    "lite_tag": null,
+                    "offset": 56,
+                    "size": 40,
+                    "start_offset": 56
+                },
+                {
+                    "buffer_name": "label_prob_b_array",
+                    "lite_tag": null,
+                    "offset": 96,
+                    "size": 40,
+                    "start_offset": 96
+                },
+                {
+                    "buffer_name": "output_probability_classlabels_ints_array",
+                    "lite_tag": null,
+                    "offset": 136,
+                    "size": 8,
+                    "start_offset": 136
+                },
+                {
+                    "buffer_name": "label_coefficients_array",
+                    "lite_tag": null,
+                    "offset": 144,
+                    "size": 10496,
+                    "start_offset": 144
+                },
+                {
+                    "buffer_name": "label_support_vectors_array",
+                    "lite_tag": null,
+                    "offset": 10640,
+                    "size": 41984,
+                    "start_offset": 10640
+                }
+            ],
+            "pool_id": 0,
+            "pool_size": 52624
+        }
+    }
+}

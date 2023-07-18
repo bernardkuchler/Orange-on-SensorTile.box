@@ -1,0 +1,6 @@
+../FATFS/Target/bsp_driver_sdram.c:44:16:BSP_SDRAM_Init	0	static
+../FATFS/Target/bsp_driver_sdram.c:65:16:BSP_SDRAM_ReadData	8	static
+../FATFS/Target/bsp_driver_sdram.c:84:16:BSP_SDRAM_ReadData_DMA	8	static
+../FATFS/Target/bsp_driver_sdram.c:107:16:BSP_SDRAM_WriteData	8	static
+../FATFS/Target/bsp_driver_sdram.c:126:16:BSP_SDRAM_WriteData_DMA	8	static
+../FATFS/Target/bsp_driver_sdram.c:143:16:BSP_SDRAM_Sendcmd	8	static

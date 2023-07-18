@@ -1,0 +1,35 @@
+
+F2_MEAN_on_ACC_Y <= 0.00819231
+|   F8_VAR_on_ACC_V <= 0.131636
+|   |   F10_MIN_on_ACC_Y <= -0.84
+|   |   |   F13_MAX_on_ACC_X <= -0.163: Vati
+|   |   |   F13_MAX_on_ACC_X > -0.163: Mirovanje
+|   |   F10_MIN_on_ACC_Y > -0.84
+|   |   |   F3_MEAN_on_ACC_Z <= -0.045375
+|   |   |   |   F9_MIN_on_ACC_X <= -1.657: Mami
+|   |   |   |   F9_MIN_on_ACC_X > -1.657
+|   |   |   |   |   F4_MEAN_on_ACC_V <= 1.04024: Vati
+|   |   |   |   |   F4_MEAN_on_ACC_V > 1.04024
+|   |   |   |   |   |   F14_MAX_on_ACC_Y <= 0.428: Mami
+|   |   |   |   |   |   F14_MAX_on_ACC_Y > 0.428: Vati
+|   |   |   F3_MEAN_on_ACC_Z > -0.045375
+|   |   |   |   F2_MEAN_on_ACC_Y <= -0.131106
+|   |   |   |   |   F11_MIN_on_ACC_Z <= -0.773: Mami
+|   |   |   |   |   F11_MIN_on_ACC_Z > -0.773: Vati
+|   |   |   |   F2_MEAN_on_ACC_Y > -0.131106: Mami
+|   F8_VAR_on_ACC_V > 0.131636
+|   |   F6_VAR_on_ACC_Y <= 0.0872378
+|   |   |   F2_MEAN_on_ACC_Y <= -0.132202
+|   |   |   |   F11_MIN_on_ACC_Z <= -0.551: Vati
+|   |   |   |   F11_MIN_on_ACC_Z > -0.551: Vati
+|   |   |   F2_MEAN_on_ACC_Y > -0.132202
+|   |   |   |   F15_MAX_on_ACC_Z <= 0.991: Mami
+|   |   |   |   F15_MAX_on_ACC_Z > 0.991: Mami
+|   |   F6_VAR_on_ACC_Y > 0.0872378: Sestra
+F2_MEAN_on_ACC_Y > 0.00819231
+|   F6_VAR_on_ACC_Y <= 1.62777e-05: Mirovanje
+|   F6_VAR_on_ACC_Y > 1.62777e-05: Jaz
+
+Number of Leaves  : 	 16
+
+Size of the Tree : 	 31

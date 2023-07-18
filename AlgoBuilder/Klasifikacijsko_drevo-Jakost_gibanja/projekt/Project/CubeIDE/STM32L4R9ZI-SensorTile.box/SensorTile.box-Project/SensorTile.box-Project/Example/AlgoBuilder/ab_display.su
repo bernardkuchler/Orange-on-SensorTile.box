@@ -1,0 +1,8 @@
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/ab_display.c:113:6:Display_Update	32	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/ab_display.c:167:6:Datalog_Init	4	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/ab_display.c:182:6:Datalog_Update	320	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/ab_display.c:219:6:Datalog_Open	240	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/ab_display.c:322:6:Datalog_Close	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/ab_display.c:331:6:Datalog_Sync_Handler	16	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/ab_display.c:345:6:Datalog_Set_RTC_Handle	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/ab_display.c:350:7:get_fattime	32	static

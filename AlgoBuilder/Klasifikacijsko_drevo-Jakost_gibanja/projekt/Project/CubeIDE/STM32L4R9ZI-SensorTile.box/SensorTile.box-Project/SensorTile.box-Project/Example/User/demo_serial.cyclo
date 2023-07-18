@@ -1,0 +1,9 @@
+demo_serial.c:140:6:BUILD_REPLY_HEADER	1
+demo_serial.c:152:6:INIT_STREAMING_HEADER	1
+demo_serial.c:165:6:INIT_STREAMING_MSG	1
+demo_serial.c:185:5:HandleMSG	76
+demo_serial.c:612:6:Init_Error	1
+demo_serial.c:623:6:Report_Error	1
+demo_serial.c:657:6:Report_Init_Error	2
+demo_serial.c:676:6:Get_Init_Error	5
+demo_serial.c:687:6:SendMSG	2

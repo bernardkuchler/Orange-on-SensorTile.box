@@ -1,0 +1,9 @@
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/demo_serial.c:140:6:BUILD_REPLY_HEADER	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/demo_serial.c:152:6:INIT_STREAMING_HEADER	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/demo_serial.c:165:6:INIT_STREAMING_MSG	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/demo_serial.c:185:5:HandleMSG	32	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/demo_serial.c:612:6:Init_Error	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/demo_serial.c:623:6:Report_Error	32	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/demo_serial.c:657:6:Report_Init_Error	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/demo_serial.c:676:6:Get_Init_Error	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/demo_serial.c:687:6:SendMSG	0	static

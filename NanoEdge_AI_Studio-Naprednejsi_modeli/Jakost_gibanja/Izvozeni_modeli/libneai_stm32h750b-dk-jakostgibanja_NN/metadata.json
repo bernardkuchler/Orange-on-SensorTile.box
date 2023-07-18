@@ -1,0 +1,74 @@
+{
+    "class_names": [
+        "mirovanje",
+        "srednja_jakost",
+        "velika_jakost"
+    ],
+    "commit": "2b824e84",
+    "compilation_date": "2023-07-04T17:59:21.563240",
+    "compilation_flags": {
+        "float_abi": "hard",
+        "fshort_enums": false,
+        "short_wchar": false
+    },
+    "compilation_str": "{'compilation_dict':{'api':{'env':'PROD','version':'v3'},'version':{'web_api':{'env':'PROD','version':'v3'},'local_api':{'version':'2023.06.31.1','platform':'win64'},'studio':'3.4.0'},'combination':[2,1,[1],0.1813,1,0.1,1,4,0.1926,0,3,1,3,85,0.0,0.0,1000000.0,1,0,0,0,0],'compilation_type':'classifier','compilation_flags':{'float_abi':'hard','short_wchar':false,'fshort_enums':false,'use_knowledge':false},'mcu':'cortex-m7_st_stm32h7_stm32h750b-dk','sensor':'multiGeneric','data':{'nb_cols':1,'nb_lines':[[60,62,62]]},'only_emulators':false,'lock_type':100,'lib_version':'v2_2b824e84','class_names':'mirovanje,srednja_jakost,velika_jakost','performance':{'performance':{'score':0.6999,'precision':0.75,'precision_confidence_interval':[0.593,0.8807]},'memory_usage':{'estimated_ram':82,'estimated_flash':132,'estimated_flash_knowledge':null}}},'sign':29646,'license_key':'***'}",
+    "compilation_type": "classifier",
+    "compile_emulators": true,
+    "compile_library": true,
+    "data": {
+        "nb_cols": 1,
+        "nb_lines": [
+            [
+                60,
+                62,
+                62
+            ]
+        ]
+    },
+    "gcc_version": "arm-none-eabi-gcc (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]",
+    "learning_min_lines": null,
+    "lib_limited": true,
+    "library_id": "64a45dfa2b734a07985f44c5",
+    "library_md5sum": "67520f960c7373d3b0654a0e0fdb43ce",
+    "mcu": "cortex-m7_st_stm32h7_stm32h750b-dk",
+    "mcu_cpn": "STM32H750B-DK",
+    "mcu_family": "STM32H7",
+    "mcu_type": "cortex-m7",
+    "memory_usage": {
+        "flash": 1602,
+        "ram": 49
+    },
+    "performance": {
+        "memory_usage": {
+            "estimated_flash": 132,
+            "estimated_flash_knowledge": null,
+            "estimated_ram": 82
+        },
+        "performance": {
+            "precision": 0.75,
+            "precision_confidence_interval": [
+                0.593,
+                0.8807
+            ],
+            "score": 0.6999
+        }
+    },
+    "sensor": "multiGeneric",
+    "studio_info": {
+        "local_api": {
+            "platform": "win64",
+            "version": "2023.06.31.1"
+        },
+        "studio": "3.4.0",
+        "web_api": {
+            "env": "PROD",
+            "version": "v3"
+        }
+    },
+    "user_info": {
+        "company": "Fri, Ljubljana",
+        "email": "bk8718@student.uni-lj.si",
+        "first_name": "Bernard",
+        "last_name": "Kuchler"
+    }
+}

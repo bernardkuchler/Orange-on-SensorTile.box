@@ -1,0 +1,9 @@
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Drivers/BSP/SensorTile.box/SensorTile.box_env_sensors.c:68:9:BSP_ENV_SENSOR_Init	88	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Drivers/BSP/SensorTile.box/SensorTile.box_env_sensors.c:183:9:BSP_ENV_SENSOR_DeInit	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Drivers/BSP/SensorTile.box/SensorTile.box_env_sensors.c:209:9:BSP_ENV_SENSOR_GetCapabilities	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Drivers/BSP/SensorTile.box/SensorTile.box_env_sensors.c:235:9:BSP_ENV_SENSOR_ReadID	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Drivers/BSP/SensorTile.box/SensorTile.box_env_sensors.c:264:9:BSP_ENV_SENSOR_Enable	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Drivers/BSP/SensorTile.box/SensorTile.box_env_sensors.c:303:9:BSP_ENV_SENSOR_Disable	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Drivers/BSP/SensorTile.box/SensorTile.box_env_sensors.c:343:9:BSP_ENV_SENSOR_GetOutputDataRate	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Drivers/BSP/SensorTile.box/SensorTile.box_env_sensors.c:383:9:BSP_ENV_SENSOR_SetOutputDataRate	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Drivers/BSP/SensorTile.box/SensorTile.box_env_sensors.c:423:9:BSP_ENV_SENSOR_GetValue	8	static

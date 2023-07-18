@@ -1,0 +1,5 @@
+main.c:198:6:SystemClock_Config	4
+main.c:260:6:PeriphCommonClock_Config	2
+main.c:129:5:main	26
+main.c:918:6:MX_USART3_UART_Init	5
+main.c:1194:6:Error_Handler	1

@@ -1,0 +1,11 @@
+../X-CUBE-AI/App/randomforestjakostgibanja.c:433:9:ai_randomforestjakostgibanja_get_info	144	static
+../X-CUBE-AI/App/randomforestjakostgibanja.c:479:9:ai_randomforestjakostgibanja_get_report	144	static
+../X-CUBE-AI/App/randomforestjakostgibanja.c:525:10:ai_randomforestjakostgibanja_get_error	0	static
+../X-CUBE-AI/App/randomforestjakostgibanja.c:531:10:ai_randomforestjakostgibanja_create	16	static
+../X-CUBE-AI/App/randomforestjakostgibanja.c:575:12:ai_randomforestjakostgibanja_inputs_get	0	static
+../X-CUBE-AI/App/randomforestjakostgibanja.c:585:12:ai_randomforestjakostgibanja_outputs_get	0	static
+../X-CUBE-AI/App/randomforestjakostgibanja.c:595:11:ai_randomforestjakostgibanja_destroy	0	static
+../X-CUBE-AI/App/randomforestjakostgibanja.c:601:9:ai_randomforestjakostgibanja_init	24	static
+../X-CUBE-AI/App/randomforestjakostgibanja.c:541:10:ai_randomforestjakostgibanja_create_and_init	88	static
+../X-CUBE-AI/App/randomforestjakostgibanja.c:618:8:ai_randomforestjakostgibanja_run	0	static
+../X-CUBE-AI/App/randomforestjakostgibanja.c:625:8:ai_randomforestjakostgibanja_forward	0	static

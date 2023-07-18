@@ -1,0 +1,13 @@
+svm.c:315:9:svm_configure_activations	2
+svm.c:351:9:svm_configure_weights	2
+svm.c:403:9:ai_svm_get_info	4
+svm.c:449:9:ai_svm_get_report	4
+svm.c:495:10:ai_svm_get_error	1
+svm.c:501:10:ai_svm_create	1
+svm.c:511:10:ai_svm_create_and_init	8
+svm.c:545:12:ai_svm_inputs_get	2
+svm.c:555:12:ai_svm_outputs_get	2
+svm.c:565:11:ai_svm_destroy	1
+svm.c:571:9:ai_svm_init	2
+svm.c:588:8:ai_svm_run	1
+svm.c:595:8:ai_svm_forward	1

@@ -1,0 +1,48 @@
+F1_VAR_on_ACC_V <= 0.050293
+|   F1_VAR_on_ACC_V <= 0.00585938
+|   |   F1_VAR_on_ACC_V <= 0.000976563
+|   |   |   F1_VAR_on_ACC_V <= 0: srednja_jakost (12.0/3.0)
+|   |   |   F1_VAR_on_ACC_V > 0: mirovanje (10.0/9.0)
+|   |   F1_VAR_on_ACC_V > 0.000976563
+|   |   |   F1_VAR_on_ACC_V <= 0.00390625: mirovanje (44.0/8.0)
+|   |   |   F1_VAR_on_ACC_V > 0.00390625
+|   |   |   |   F1_VAR_on_ACC_V <= 0.00488281: srednja_jakost (4.0)
+|   |   |   |   F1_VAR_on_ACC_V > 0.00488281: mirovanje (2.0/1.0)
+|   F1_VAR_on_ACC_V > 0.00585938: srednja_jakost (17.0)
+F1_VAR_on_ACC_V > 0.050293
+|   F1_VAR_on_ACC_V <= 0.118164: srednja_jakost (9.0/4.0)
+|   F1_VAR_on_ACC_V > 0.118164: velika_jakost (57.0/1.0)
+
+Number of Leaves  : 	8
+Size of the tree : 	15
+
+
+class:
+ => mirovanje, srednja_jakost, velika_jakost, 
+features:
+ => F1_VAR_on_ACC_V, 
+
+
+Mean absolute error	0.793747
+Root mean squared error	0.794145
+ ======= Whole data training with Confidence Factor: 0.9 ========= 
+
+
+===== Confusion Matrix =====
+         	mirovanje	srednja_	velika_j	<-- classified as
+mirovanje	56	3	0	
+srednja_	18	42	1	
+velika_j	0	4	57	
+
+Total Number of Instances        : 181
+Correctly Classified Instances   : 155
+Incorrectly Classified Instances : 26
+Kappa Statistic: 0.332499
+Accuracy: 85.6354%
+
+Report  :	precision	recall	support	
+mirovanje	0.949    	0.757	 59
+srednja_	0.689    	0.857	 61
+velika_j	0.934    	0.983	 61
+
+avg/total	0.856    	0.867	 181

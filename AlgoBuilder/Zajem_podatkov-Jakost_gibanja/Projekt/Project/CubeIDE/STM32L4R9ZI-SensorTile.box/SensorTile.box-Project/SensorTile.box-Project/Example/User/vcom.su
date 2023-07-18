@@ -1,0 +1,7 @@
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Zajem_podatkov-Jakost_gibanja/Projekt/Project/Src/vcom.c:88:5:VCOM_init	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Zajem_podatkov-Jakost_gibanja/Projekt/Project/Src/vcom.c:144:5:VCOM_deinit	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Zajem_podatkov-Jakost_gibanja/Projekt/Project/Src/vcom.c:161:19:VCOM_receive_MSG	32	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Zajem_podatkov-Jakost_gibanja/Projekt/Project/Src/vcom.c:307:19:VCOM_send_MSG	24	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Zajem_podatkov-Jakost_gibanja/Projekt/Project/Src/vcom.c:366:19:VCOM_send_FFT	544	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Zajem_podatkov-Jakost_gibanja/Projekt/Project/Src/vcom.c:420:10:VCOM_read	16	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Zajem_podatkov-Jakost_gibanja/Projekt/Project/Src/vcom.c:466:10:VCOM_write	16	static

@@ -1,0 +1,13 @@
+!SESSION 2023-07-10 13:04:01.597 -----------------------------------------------
+eclipse.buildId=Version 1.12.1
+java.version=11.0.17
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_AT
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import F:\FRI_novSSD\Diploma\Diploma-GitHub\AlgoBuilder\Klasifikacijsko_drevo-Jakost_gibanja\projekt\Project\CubeIDE\STM32L4R9ZI-SensorTile.box\SensorTile.box-Project -build SensorTile.box-Project/SensorTile.box-Project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data F:\FRI_novSSD\Diploma\Diploma-GitHub\AlgoBuilder\Klasifikacijsko_drevo-Jakost_gibanja\projekt\Project\CubeIDE\STM32L4R9ZI-SensorTile.box -import F:\FRI_novSSD\Diploma\Diploma-GitHub\AlgoBuilder\Klasifikacijsko_drevo-Jakost_gibanja\projekt\Project\CubeIDE\STM32L4R9ZI-SensorTile.box\SensorTile.box-Project -build SensorTile.box-Project/SensorTile.box-Project
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-10 13:04:11.389
+!MESSAGE Indexed 'SensorTile.box-Project' (76 sources, 178 headers) in 6,42 sec: 27 553 declarations; 134 445 references; 0 unresolved inclusions; 1 syntax errors; 1 unresolved names (0,00062 %)
+
+!ENTRY org.eclipse.core.resources 4 566 2023-07-10 13:04:26.531
+!MESSAGE Workspace was not properly initialized or has already shutdown.

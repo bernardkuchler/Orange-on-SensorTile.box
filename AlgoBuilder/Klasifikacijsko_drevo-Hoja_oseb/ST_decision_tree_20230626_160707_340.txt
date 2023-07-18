@@ -1,0 +1,100 @@
+F2_MEAN_on_ACC_Y <= 0.00840322
+|   F8_VAR_on_ACC_V <= 0.130886
+|   |   F10_MIN_on_ACC_Y <= -0.839918
+|   |   |   F13_MAX_on_ACC_X <= -0.298938
+|   |   |   |   F5_VAR_on_ACC_X <= 0.0664063: Vati (200.0)
+|   |   |   |   F5_VAR_on_ACC_X > 0.0664063
+|   |   |   |   |   F7_VAR_on_ACC_Z <= 0.0620117
+|   |   |   |   |   |   F1_MEAN_on_ACC_X <= -1.0127: Jaz (1.0)
+|   |   |   |   |   |   F1_MEAN_on_ACC_X > -1.0127: Vati (3.0)
+|   |   |   |   |   F7_VAR_on_ACC_Z > 0.0620117
+|   |   |   |   |   |   F9_MIN_on_ACC_X <= -1.64355: Sestra (5.0)
+|   |   |   |   |   |   F9_MIN_on_ACC_X > -1.64355: Mami (1.0)
+|   |   |   F13_MAX_on_ACC_X > -0.298938
+|   |   |   |   F1_MEAN_on_ACC_X <= -0.851563
+|   |   |   |   |   F1_MEAN_on_ACC_X <= -1.00391
+|   |   |   |   |   |   F1_MEAN_on_ACC_X <= -1.01074: Vati (1.0)
+|   |   |   |   |   |   F1_MEAN_on_ACC_X > -1.01074: Jaz (1.0)
+|   |   |   |   |   F1_MEAN_on_ACC_X > -1.00391: Mami (2.0)
+|   |   |   |   F1_MEAN_on_ACC_X > -0.851563: Mirovanje (51.0)
+|   |   F10_MIN_on_ACC_Y > -0.839918
+|   |   |   F3_MEAN_on_ACC_Z <= -0.0453391
+|   |   |   |   F9_MIN_on_ACC_X <= -1.65625
+|   |   |   |   |   F14_MAX_on_ACC_Y <= 0.449951
+|   |   |   |   |   |   F1_MEAN_on_ACC_X <= -1.08789: Vati (1.0)
+|   |   |   |   |   |   F1_MEAN_on_ACC_X > -1.08789: Mami (9.0)
+|   |   |   |   |   F14_MAX_on_ACC_Y > 0.449951
+|   |   |   |   |   |   F1_MEAN_on_ACC_X <= -0.959473: Jaz (7.0)
+|   |   |   |   |   |   F1_MEAN_on_ACC_X > -0.959473: Mami (1.0)
+|   |   |   |   F9_MIN_on_ACC_X > -1.65625
+|   |   |   |   |   F1_MEAN_on_ACC_X <= -1.02051: Mami (4.0)
+|   |   |   |   |   F1_MEAN_on_ACC_X > -1.02051: Vati (63.0/4.0)
+|   |   |   F3_MEAN_on_ACC_Z > -0.0453391: Mami (240.0/20.0)
+|   F8_VAR_on_ACC_V > 0.130886
+|   |   F6_VAR_on_ACC_Y <= 0.0873474
+|   |   |   F2_MEAN_on_ACC_Y <= -0.132202
+|   |   |   |   F7_VAR_on_ACC_Z <= 0.115051
+|   |   |   |   |   F1_MEAN_on_ACC_X <= -0.949219: Vati (16.0)
+|   |   |   |   |   F1_MEAN_on_ACC_X > -0.949219
+|   |   |   |   |   |   F1_MEAN_on_ACC_X <= -0.914551: Mami (2.0)
+|   |   |   |   |   |   F1_MEAN_on_ACC_X > -0.914551: Vati (2.0)
+|   |   |   |   F7_VAR_on_ACC_Z > 0.115051
+|   |   |   |   |   F6_VAR_on_ACC_Y <= 0.0690308: Mami (4.0)
+|   |   |   |   |   F6_VAR_on_ACC_Y > 0.0690308: Sestra (2.0)
+|   |   |   F2_MEAN_on_ACC_Y > -0.132202
+|   |   |   |   F15_MAX_on_ACC_Z <= 1.21582
+|   |   |   |   |   F1_MEAN_on_ACC_X <= -0.964355: Mami (30.0)
+|   |   |   |   |   F1_MEAN_on_ACC_X > -0.964355
+|   |   |   |   |   |   F2_MEAN_on_ACC_Y <= -0.128174: Mami (2.0)
+|   |   |   |   |   |   F2_MEAN_on_ACC_Y > -0.128174: Sestra (2.0)
+|   |   |   |   F15_MAX_on_ACC_Z > 1.21582
+|   |   |   |   |   F2_MEAN_on_ACC_Y <= -0.110779: Mami (1.0)
+|   |   |   |   |   F2_MEAN_on_ACC_Y > -0.110779: Sestra (5.0)
+|   |   F6_VAR_on_ACC_Y > 0.0873474
+|   |   |   F13_MAX_on_ACC_X <= -0.505696
+|   |   |   |   F6_VAR_on_ACC_Y <= 0.11261: Sestra (1.0)
+|   |   |   |   F6_VAR_on_ACC_Y > 0.11261: Vati (5.0)
+|   |   |   F13_MAX_on_ACC_X > -0.505696
+|   |   |   |   F14_MAX_on_ACC_Y <= 0.259033: Vati (2.0)
+|   |   |   |   F14_MAX_on_ACC_Y > 0.259033: Sestra (285.0/4.0)
+F2_MEAN_on_ACC_Y > 0.00840322
+|   F6_VAR_on_ACC_Y <= 6.81505e-005: Mirovanje (255.0)
+|   F6_VAR_on_ACC_Y > 6.81505e-005: Jaz (289.0/7.0)
+
+Number of Leaves  : 	32
+Size of the tree : 	63
+
+
+class:
+ => Jaz, Mami, Mirovanje, Sestra, Vati, 
+features:
+ => F1_MEAN_on_ACC_X, F2_MEAN_on_ACC_Y, F3_MEAN_on_ACC_Z, F4_MEAN_on_ACC_V, F5_VAR_on_ACC_X, F6_VAR_on_ACC_Y, F7_VAR_on_ACC_Z, F8_VAR_on_ACC_V, F9_MIN_on_ACC_X, F10_MIN_on_ACC_Y, F11_MIN_on_ACC_Z, F12_MIN_on_ACC_V, F13_MAX_on_ACC_X, F14_MAX_on_ACC_Y, F15_MAX_on_ACC_Z, F16_MAX_on_ACC_V, 
+
+
+Mean absolute error	0.940941
+Root mean squared error	0.940961
+ ======= Whole data training with Confidence Factor: 0.9 ========= 
+
+
+===== Confusion Matrix =====
+         	Jaz      	Mami     	Mirovanje	Sestra   	Vati     	<-- classified as
+Jaz      	298	5	0	0	0	
+Mami     	4	296	0	2	4	
+Mirovanje	0	0	306	0	0	
+Sestra   	3	3	0	300	0	
+Vati     	0	12	0	2	293	
+
+Total Number of Instances        : 1528
+Correctly Classified Instances   : 1493
+Incorrectly Classified Instances : 35
+Kappa Statistic: 0.199997
+Accuracy: 97.7094%
+
+Report  :	precision	recall	support	
+Jaz      	0.983    	0.977	 303
+Mami     	0.967    	0.937	 306
+Mirovanje	1    	1	 306
+Sestra   	0.98    	0.987	 306
+Vati     	0.954    	0.987	 307
+
+avg/total	0.977    	0.977	 1528

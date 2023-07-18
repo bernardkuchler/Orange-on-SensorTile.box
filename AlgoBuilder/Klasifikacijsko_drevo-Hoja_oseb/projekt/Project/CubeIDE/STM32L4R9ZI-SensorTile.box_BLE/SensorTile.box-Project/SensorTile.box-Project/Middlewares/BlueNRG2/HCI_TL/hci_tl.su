@@ -1,0 +1,5 @@
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Middlewares/ST/BlueNRG2/hci/hci_tl_patterns/Basic/hci_tl.c:155:6:hci_init	24	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Middlewares/ST/BlueNRG2/hci/hci_tl_patterns/Basic/hci_tl.c:182:6:hci_register_io_bus	4	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Middlewares/ST/BlueNRG2/hci/hci_tl_patterns/Basic/hci_tl.c:192:5:hci_send_req	248	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Middlewares/ST/BlueNRG2/hci/hci_tl_patterns/Basic/hci_tl.c:333:6:hci_user_evt_proc	24	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Middlewares/ST/BlueNRG2/hci/hci_tl_patterns/Basic/hci_tl.c:351:6:hci_notify_asynch_evt	16	static

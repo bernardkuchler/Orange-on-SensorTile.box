@@ -1,0 +1,5 @@
+../FATFS/Target/sdram_diskio.c:89:9:SDRAMDISK_status	0	static
+../FATFS/Target/sdram_diskio.c:106:9:SDRAMDISK_read	0	static
+../FATFS/Target/sdram_diskio.c:133:9:SDRAMDISK_write	8	static
+../FATFS/Target/sdram_diskio.c:160:9:SDRAMDISK_ioctl	0	static
+../FATFS/Target/sdram_diskio.c:71:9:SDRAMDISK_initialize	8	static

@@ -1,0 +1,5 @@
+hci_tl.c:155:6:hci_init	5
+hci_tl.c:182:6:hci_register_io_bus	1
+hci_tl.c:192:5:hci_send_req	22
+hci_tl.c:333:6:hci_user_evt_proc	3
+hci_tl.c:351:6:hci_notify_asynch_evt	6

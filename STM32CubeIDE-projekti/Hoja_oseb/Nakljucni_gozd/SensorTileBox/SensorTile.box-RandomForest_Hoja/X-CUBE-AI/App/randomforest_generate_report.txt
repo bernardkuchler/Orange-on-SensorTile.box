@@ -1,0 +1,145 @@
+Neural Network Tools for STM32AI v1.7.0 (STM.ai v8.0.1-19451)
+Created date          : 2023-07-11 20:11:36
+Parameters            : generate --name randomforest -m F:/FRI_novSSD/Diploma/Diploma-GitHub/Visual_Studio_Code/Nakljucni_gozd/Nakljucni_gozd-Hoja_oseb-ONNX.onnx --type onnx --compression none --verbosity 1 --workspace C:\Users\Adminj\AppData\Local\Temp\mxAI_workspace22850081579359005270054931675838845 --output C:\Users\Adminj\.stm32cubemx\network_output --allocate-inputs --series stm32l4 --allocate-outputs
+
+Exec/report summary (generate)
+-----------------------------------------------------------------------------------------------------------------------------------
+model file         :   F:\FRI_novSSD\Diploma\Diploma-GitHub\Visual_Studio_Code\Nakljucni_gozd\Nakljucni_gozd-Hoja_oseb-ONNX.onnx   
+type               :   onnx                                                                                                        
+c_name             :   randomforest                                                                                                
+compression        :   none                                                                                                        
+options            :   allocate-inputs, allocate-outputs                                                                           
+optimization       :   balanced                                                                                                    
+target/series      :   stm32l4                                                                                                     
+workspace dir      :   C:\Users\Adminj\AppData\Local\Temp\mxAI_workspace22850081579359005270054931675838845                        
+output dir         :   C:\Users\Adminj\.stm32cubemx\network_output                                                                 
+model_fmt          :   float                                                                                                       
+model_name         :   Nakljucni_gozdHoja_osebONNX                                                                                 
+model_hash         :   50f9c86336850d9ee75ff6e1689b3585                                                                            
+params #           :   31,922 items (78.59 KiB)                                                                                    
+-----------------------------------------------------------------------------------------------------------------------------------
+input 1/1          :   'float_input' (domain:activations/**default**)                                                              
+                   :   16 items, 64 B, ai_float, float, (1,1,1,16)                                                                 
+output 1/2         :   'label0' (domain:activations/**default**)                                                                   
+                   :   1 items, 4 B, ai_i32, int32_t, (1,1,1,1)                                                                    
+output 2/2         :   'output_probability' (domain:activations/**default**)                                                       
+                   :   10 items, 40 B, ai_float, float, (1,1,5,2)                                                                  
+outputs (total)    :   44 B                                                                                                        
+macc               :   204                                                                                                         
+weights (ro)       :   80,496 B (78.61 KiB) (1 segment) / -47,192(-37.0%) vs float model                                           
+activations (rw)   :   88 B (88 B) (1 segment) *                                                                                   
+ram (total)        :   88 B (88 B) = 88 + 0 + 0                                                                                    
+-----------------------------------------------------------------------------------------------------------------------------------
+(*) 'input'/'output' buffers can be used from the activations buffer
+
+Model name - Nakljucni_gozdHoja_osebONNX ['float_input'] ['label0', 'output_probability']
+------ -------------------------------------------------------- ---------------- --------------- ------ -------------- --- ------------ ------------- ----------------------------------------- 
+m_id   layer (type,original)                                    oshape           param/size        macc   connected to   | c_size       c_macc        c_type                                    
+------ -------------------------------------------------------- ---------------- --------------- ------ -------------- --- ------------ ------------- ----------------------------------------- 
+0      float_input (Input, )                                    [h:1,c:16]                                               |                            
+------ -------------------------------------------------------- ---------------- --------------- ------ -------------- --- ------------ ------------- ----------------------------------------- 
+1      label (TreeEnsembleClassifier, TreeEnsembleClassifier)   [c:1][h:1,c:5]   31,917/80,476      204    float_input   | +12(+0.0%)                 tree_ensemble_classifier_oi32[o]of32[0]   
+------ -------------------------------------------------------- ---------------- --------------- ------ -------------- --- ------------ ------------- ----------------------------------------- 
+2      output_probability (ZipMap, ZipMap)                      [h:1,w:5,c:2]    5/5                             label   | +3(+60.0%)                 zipmap_of32[o][1]                         
+------ -------------------------------------------------------- ---------------- --------------- ------ -------------- --- ------------ ------------- ----------------------------------------- 
+3      output_label (Cast, Cast)                                [c:1]                                 2          label   |              -2(-100.0%)   
+------ -------------------------------------------------------- ---------------- --------------- ------ -------------- --- ------------ ------------- ----------------------------------------- 
+model/c-model: macc=206/204 -2(-1.0%) weights=80,481/80,496 +15(+0.0%) activations=--/88 io=--/0
+
+
+
+Generated C-graph summary
+------------------------------------------------------------------------------------------------------------------------
+model name            : nakljucni_gozdhoja_osebonnx
+c-name                : randomforest
+c-node #              : 2
+c-array #             : 17
+activations size      : 88 (1 segment)
+weights size          : 80496 (1 segment)
+macc                  : 204
+inputs                : ['float_input_output']
+outputs               : ['label_output0', 'output_probability_output']
+
+C-Arrays (17)
+------ ------------------------------------- ------------ ------------------------- ---------------- --------- --------- 
+c_id   name (*_array)                        item/size    domain/mem-pool           c-type           fmt       comment   
+------ ------------------------------------- ------------ ------------------------- ---------------- --------- --------- 
+0      label_output0                         1/4          activations/**default**   int32_t          s32       /output   
+1      label_output1                         5/20         activations/**default**   float            float32             
+2      label_class_nodeids                   6940/13880   weights/weights           const uint16_t   u16                 
+3      output_probability_output             10/40        activations/**default**   float            float32   /output   
+4      label_branch_mode                     17/20        weights/weights           const uint8_t    u8                  
+5      label_nb_class_by_estimator           17/36        weights/weights           const uint16_t   u16                 
+6      label_nodes_featureids                2759/2760    weights/weights           const uint8_t    u8                  
+7      label_classlabels_int64s              5/20         weights/weights           const int32_t    s32                 
+8      label_nodes_values                    2759/11036   weights/weights           const float      float32             
+9      label_base_values                     5/20         weights/weights           const float      float32             
+10     label_nodes_truenodeids               2759/5520    weights/weights           const uint16_t   u16                 
+11     label_class_ids                       6940/13880   weights/weights           const uint16_t   u16                 
+12     output_probability_classlabels_ints   5/8          weights/weights           const uint8_t    u8                  
+13     label_nodes_falsenodeids              2759/5520    weights/weights           const uint16_t   u16                 
+14     label_class_weights                   6940/27760   weights/weights           const float      float32             
+15     float_input_output                    16/64        activations/**default**   float            float32   /input    
+16     label_nb_node_by_estimator            17/36        weights/weights           const uint16_t   u16                 
+------ ------------------------------------- ------------ ------------------------- ---------------- --------- --------- 
+
+C-Layers (2)
+------ -------------------- ---- --------------------------- ------ ------- ---------------------------------------- ------------------- 
+c_id   name (*_layer)       id   layer_type                  macc   rom     tensors                                  shape (array id)    
+------ -------------------- ---- --------------------------- ------ ------- ---------------------------------------- ------------------- 
+0      label                1    tree_ensemble_classifier    204    80488   I: float_input_output                    (1,1,1,16) (15)     
+                                                                            W: label_branch_mode                     (1,1,1,17) (4)      
+                                                                            W: label_nodes_featureids                (1,1,1,2759) (6)    
+                                                                            W: label_nodes_values                    (1,1,1,2759) (8)    
+                                                                            W: label_nodes_truenodeids               (1,1,1,2759) (10)   
+                                                                            W: label_nodes_falsenodeids              (1,1,1,2759) (13)   
+                                                                            W: label_class_weights                   (1,1,1,6940) (14)   
+                                                                            W: label_nb_node_by_estimator            (1,1,1,17) (16)     
+                                                                            W: label_class_nodeids                   (1,1,1,6940) (2)    
+                                                                            W: label_nb_class_by_estimator           (1,1,1,17) (5)      
+                                                                            W: label_classlabels_int64s              (1,1,1,5) (7)       
+                                                                            W: label_base_values                     (1,1,1,5) (9)       
+                                                                            W: label_class_ids                       (1,1,1,6940) (11)   
+                                                                            O: label_output0                         (1,1,1,1) (0)       
+                                                                            O: label_output1                         (1,1,1,5) (1)       
+------ -------------------- ---- --------------------------- ------ ------- ---------------------------------------- ------------------- 
+1      output_probability   2    zipmap                      0      8       I: label_output1                         (1,1,1,5) (1)       
+                                                                            W: output_probability_classlabels_ints   (1,1,1,5) (12)      
+                                                                            O: output_probability_output             (1,1,5,2) (3)       
+------ -------------------- ---- --------------------------- ------ ------- ---------------------------------------- ------------------- 
+
+
+
+Number of operations per c-layer
+------- ------ ---------------------------------- ----- ------------- -------- ---------- 
+c_id    m_id   name (type)                          #op          type   #param   sparsity 
+------- ------ ---------------------------------- ----- ------------- -------- ---------- 
+0       1      label (tree_ensemble_classifier)     204   smul_f32_u8   31,917     0.3741 
+1       2      output_probability (zipmap)            0   smul_f32_u8        5     0.2000 
+------- ------ ---------------------------------- ----- ------------- -------- ---------- 
+total                                               204                 31,922     0.3740 
+
+Number of operation types
+---------------- ----- ----------- 
+operation type       #           % 
+---------------- ----- ----------- 
+smul_f32_u8        204      100.0% 
+
+Complexity report (model)
+------ -------------------- ------------------------- ------------------------- ------ 
+m_id   name                 c_macc                    c_rom                     c_id   
+------ -------------------- ------------------------- ------------------------- ------ 
+1      label                |||||||||||||||| 100.0%   |||||||||||||||| 100.0%   [0]    
+2      output_probability   |                  0.0%   |                  0.0%   [1]    
+------ -------------------- ------------------------- ------------------------- ------ 
+macc=204 weights=80,496 act=88 ram_io=0
+
+Generated files (7)
+------------------------------------------------------------------------ 
+C:\Users\Adminj\.stm32cubemx\network_output\randomforest_config.h        
+C:\Users\Adminj\.stm32cubemx\network_output\randomforest.h               
+C:\Users\Adminj\.stm32cubemx\network_output\randomforest.c               
+C:\Users\Adminj\.stm32cubemx\network_output\randomforest_data_params.h   
+C:\Users\Adminj\.stm32cubemx\network_output\randomforest_data_params.c   
+C:\Users\Adminj\.stm32cubemx\network_output\randomforest_data.h          
+C:\Users\Adminj\.stm32cubemx\network_output\randomforest_data.c          

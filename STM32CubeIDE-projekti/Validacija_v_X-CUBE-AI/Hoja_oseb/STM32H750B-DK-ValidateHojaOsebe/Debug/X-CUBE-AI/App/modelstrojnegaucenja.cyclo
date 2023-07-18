@@ -1,0 +1,11 @@
+modelstrojnegaucenja.c:403:9:ai_modelstrojnegaucenja_get_info	4
+modelstrojnegaucenja.c:449:9:ai_modelstrojnegaucenja_get_report	4
+modelstrojnegaucenja.c:495:10:ai_modelstrojnegaucenja_get_error	1
+modelstrojnegaucenja.c:501:10:ai_modelstrojnegaucenja_create	1
+modelstrojnegaucenja.c:545:12:ai_modelstrojnegaucenja_inputs_get	2
+modelstrojnegaucenja.c:555:12:ai_modelstrojnegaucenja_outputs_get	2
+modelstrojnegaucenja.c:565:11:ai_modelstrojnegaucenja_destroy	1
+modelstrojnegaucenja.c:571:9:ai_modelstrojnegaucenja_init	4
+modelstrojnegaucenja.c:511:10:ai_modelstrojnegaucenja_create_and_init	8
+modelstrojnegaucenja.c:588:8:ai_modelstrojnegaucenja_run	1
+modelstrojnegaucenja.c:595:8:ai_modelstrojnegaucenja_forward	1

@@ -1,0 +1,4 @@
+svm_data.c:44:11:ai_svm_data_activations_buffer_get	1
+svm_data.c:62:11:ai_svm_data_weights_buffer_get	1
+svm_data.c:80:11:ai_svm_data_weights_get	1
+svm_data.c:92:9:ai_svm_data_params_get	2

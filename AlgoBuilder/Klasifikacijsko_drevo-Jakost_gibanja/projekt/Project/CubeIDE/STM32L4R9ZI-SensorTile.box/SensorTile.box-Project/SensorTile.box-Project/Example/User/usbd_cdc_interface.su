@@ -1,0 +1,7 @@
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/usbd_cdc_interface.c:155:15:CDC_Itf_DeInit	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/usbd_cdc_interface.c:232:15:CDC_Itf_Receive	4	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/usbd_cdc_interface.c:120:15:CDC_Itf_Init	16	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/usbd_cdc_interface.c:168:15:CDC_Itf_Control	4	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/usbd_cdc_interface.c:277:9:CDC_Fill_Buffer	20	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/usbd_cdc_interface.c:322:9:CDC_Next_Packet_Rx	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Project/Src/usbd_cdc_interface.c:338:6:CDC_TIM_PeriodElapsedCallback	16	static

@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Project>
+    <Version>1.1</Version>
+    <AppVersion>3.1.0.4533</AppVersion>
+    <Location>F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt</Location>
+    <Toolchain>STM32CubeIDE</Toolchain>
+    <Target>SensorTile.box</Target>
+    <Nodes>
+        <Node>Sensor_Hub_1_out</Node>
+        <Node>Acceleration_g_1_data</Node>
+        <Node>Sensor_Hub_1_out</Node>
+        <Node>FSM_MLC_1_mlc_output</Node>
+    </Nodes>
+    <Block>
+        <Name>[Sensor Hub]</Name>
+        <DisplayName>[Sensor Hub]</DisplayName>
+        <Version>3.0</Version>
+        <LibName>Sensor Hub</LibName>
+        <BlockNumber>1</BlockNumber>
+        <Description>Sensor Hub provides links to sensor and algorithms in order to retrieve data from them.</Description>
+        <X>-571</X>
+        <Y>-210</Y>
+        <Width>100</Width>
+        <Height>40</Height>
+        <Inputs/>
+        <Outputs>
+            <Output>
+                <Type>VOID</Type>
+                <Size>1</Size>
+                <Name>out</Name>
+                <Description>Sensor Hub handler.</Description>
+                <Node>Sensor_Hub_1_out</Node>
+            </Output>
+        </Outputs>
+        <Properties>
+            <Property>
+                <Type>INT</Type>
+                <Name>Data Rate Control</Name>
+                <Value>1</Value>
+                <Enum>Timer=0,Accelerometer=1,Gyroscope=2,Offline Data=255</Enum>
+                <Description>Defines the data rate source.</Description>
+            </Property>
+            <Property>
+                <Type>INT</Type>
+                <Name>Data Rate</Name>
+                <Value>26</Value>
+                <Min>1</Min>
+                <Max>6666</Max>
+                <Description>Defines the sensor's and algorithm's data rate in Hz. If accelerometer or gyroscope is selected as data rate source, the closest higher available output data rate (ODR) is selected.</Description>
+            </Property>
+            <Property>
+                <Type>INT</Type>
+                <Name>Accelerometer Full Scale</Name>
+                <Value>1</Value>
+                <Enum>2 g=0,4 g=1,8 g=2,16 g=3</Enum>
+                <Description>Defines the accelerometer full scale.</Description>
+            </Property>
+            <Property>
+                <Type>INT</Type>
+                <Name>Gyroscope Full Scale</Name>
+                <Value>1</Value>
+                <Enum>245 dps=0,500 dps=1,1000 dps=2,2000 dps=3</Enum>
+                <Description>Defines the gyroscope full scale.</Description>
+            </Property>
+        </Properties>
+        <Memory/>
+        <Command>
+            <Line>Sensor_Hub_Handler(&amp;%out%);</Line>
+        </Command>
+        <InitCode>
+            <Line>Sensor_Hub_Init(%Data Rate Control%, %Data Rate%, %Accelerometer Full Scale%, %Gyroscope Full Scale%);</Line>
+        </InitCode>
+        <Function/>
+    </Block>
+    <Block>
+        <Name>Acceleration [g]</Name>
+        <DisplayName>Acceleration##[g]</DisplayName>
+        <Version>2.1</Version>
+        <LibName>Sensor Hub</LibName>
+        <BlockNumber>1</BlockNumber>
+        <Description>Retrieve the accelerometer data.</Description>
+        <Dependency>Accelerometer</Dependency>
+        <X>-423</X>
+        <Y>-211</Y>
+        <Width>100</Width>
+        <Height>40</Height>
+        <Inputs>
+            <Input>
+                <Type>VOID</Type>
+                <Size>1</Size>
+                <Name>SensorHubHandle</Name>
+                <Description>Connect to Sensor Hub output.</Description>
+                <Node>Sensor_Hub_1_out</Node>
+            </Input>
+        </Inputs>
+        <Outputs>
+            <Output>
+                <Type>FLOAT</Type>
+                <Size>3</Size>
+                <Name>data</Name>
+                <Description>Accelerometer data (acceleration) in g unit.</Description>
+                <Node>Acceleration_g_1_data</Node>
+            </Output>
+        </Outputs>
+        <Properties/>
+        <Memory/>
+        <Command>
+            <Line>Accelero_Sensor_GetData(%SensorHubHandle%, %data%);</Line>
+        </Command>
+        <InitCode>
+            <Line>Accelero_Init();</Line>
+        </InitCode>
+        <Function/>
+    </Block>
+    <Block>
+        <Name>FSM / MLC</Name>
+        <DisplayName>FSM##MLC</DisplayName>
+        <Version>1.4</Version>
+        <LibName>Sensor Hub</LibName>
+        <BlockNumber>1</BlockNumber>
+        <Description>Finite State Machine (FSM) and Machine Learning Core (MLC).&lt;BR>&lt;BR>The configuration for FSM and MLC is stored in so called UCF (Unico Configuration Files) file. UCF file with FSM and MLC configuration can be created in &lt;a href="https://www.st.com/content/st_com/en/products/embedded-software/evaluation-tool-software/stsw-mki109w.html">Unico GUI&lt;/a> software. Examples for various FSM and MLC configurations can be downloaded from ST GitHub repository for &lt;a href="https://github.com/STMicroelectronics/STMems_Finite_State_Machine">FSM configurations&lt;/a> and &lt;a href="https://github.com/STMicroelectronics/STMems_Machine_Learning_Core">MLC configuration&lt;/a>.&lt;BR>&lt;BR> The UCF file usually contains also settings of sensor full scale (FS) and output data rate (ODR). This setting might be different that settings required by Sensor Hub. The firmware generated by AlgoBuilder contains function to check if the FS and ODR set by UCF file is compatible with Sensor Hub settings. If not, an error message is generated. &lt;BR>&lt;BR>Don't use INT1 in MLC or FSM configuration if accelerometer or gyroscope is used as Data Rate Control in SensorHub. &lt;BR>&lt;BR>It is functional only for sensors with these features otherwise returns 0. This function block doesn't work with offline data because it is implemented inside the sensor.</Description>
+        <Dependency>FSM_MLC</Dependency>
+        <X>-414</X>
+        <Y>-120</Y>
+        <Width>100</Width>
+        <Height>40</Height>
+        <Inputs>
+            <Input>
+                <Type>VOID</Type>
+                <Size>1</Size>
+                <Name>SensorHubHandle</Name>
+                <Description>Connect to Sensor Hub output.</Description>
+                <Node>Sensor_Hub_1_out</Node>
+            </Input>
+        </Inputs>
+        <Outputs>
+            <Output>
+                <Type>INT</Type>
+                <Size>%Number of FSM%</Size>
+                <Name>fsm_output</Name>
+                <Description>Array of FSM outputs.</Description>
+            </Output>
+            <Output>
+                <Type>INT</Type>
+                <Size>%Number of MLC%</Size>
+                <Name>mlc_output</Name>
+                <Description>Array of MLC outputs.</Description>
+                <Node>FSM_MLC_1_mlc_output</Node>
+            </Output>
+        </Outputs>
+        <Properties>
+            <Property>
+                <Type>INT</Type>
+                <Name>Number of FSM</Name>
+                <Value>0</Value>
+                <Min>0</Min>
+                <Max>16</Max>
+                <Description>Defines number of used FSM. Value must be from 0 to 16.</Description>
+            </Property>
+            <Property>
+                <Type>INT</Type>
+                <Name>Number of MLC</Name>
+                <Value>1</Value>
+                <Min>0</Min>
+                <Max>8</Max>
+                <Description>Defines number of used MLC. Value must be from 0 to 8.</Description>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Unico Configuration File</Name>
+                <Value>../DrevoUCF.ucf</Value>
+                <Description>The name of Unico Configuration file (*.ucf). The file should be located in the same directory as the AlgoBuilder design file. Saved file path is relative to location of actual design xml file.</Description>
+            </Property>
+        </Properties>
+        <Memory/>
+        <Command>
+            <Line>FSM_MLC_GetData(%SensorHubHandle%, %fsm_output%, %mlc_output%, %Number of FSM%, %Number of MLC%);</Line>
+        </Command>
+        <InitCode>
+            <Line>FSM_MLC_Init(%Number of FSM%, %Number of MLC%);</Line>
+        </InitCode>
+        <Function/>
+    </Block>
+    <Block>
+        <Name>Graph</Name>
+        <DisplayName>Graph</DisplayName>
+        <Version>2.2</Version>
+        <LibName>Display</LibName>
+        <BlockNumber>1</BlockNumber>
+        <Description>Graph. Displays up to six real-time curves. The X-axis represents time, Y-axis is value.</Description>
+        <X>-188</X>
+        <Y>-220</Y>
+        <Width>80</Width>
+        <Height>40</Height>
+        <Inputs>
+            <Input>
+                <Type>VARIANT</Type>
+                <Size>%Number of Curves%</Size>
+                <Name>in</Name>
+                <Description>Input data to plot (y-axis value). The input data size has to match with number of curves.</Description>
+                <Node>Acceleration_g_1_data</Node>
+            </Input>
+        </Inputs>
+        <Outputs/>
+        <Properties>
+            <Property>
+                <Type>INT</Type>
+                <Name>Data Type</Name>
+                <Value>Accelerometer</Value>
+                <Enum>Custom=Custom,Accelerometer=Accelerometer,Gyroscope=Gyroscope,Magnetometer=Magnetometer</Enum>
+                <Description>Enables easy setting of waveform names and units to apropriate values.</Description>
+            </Property>
+            <Property>
+                <Type>INT</Type>
+                <Name>Number of Curves</Name>
+                <Value>3</Value>
+                <Min>1</Min>
+                <Max>6</Max>
+                <Description>Defines number of curves to plot. Value must be from 1 to 6.</Description>
+                <DataTypeValues>3,3,3,3</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Graph Name</Name>
+                <Value>Acceleration</Value>
+                <Description>Label of the graph.</Description>
+                <DataTypeValues>Graph,Acceleration,Angular##Rate,Magnetic##Field</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Waveform 1 Name</Name>
+                <Value>accX</Value>
+                <Description>Name of the waveform 1.</Description>
+                <DisplayDependency>Number of Curves</DisplayDependency>
+                <DisplayCondition>1</DisplayCondition>
+                <DataTypeValues>Waveform 1,accX,gyroX,magnX</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Waveform 2 Name</Name>
+                <Value>accY</Value>
+                <Description>Name of the waveform 2.</Description>
+                <DisplayDependency>Number of Curves</DisplayDependency>
+                <DisplayCondition>2</DisplayCondition>
+                <DataTypeValues>Waveform 2,accY,gyroY,magnY</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Waveform 3 Name</Name>
+                <Value>accZ</Value>
+                <Description>Name of the waveform 3.</Description>
+                <DisplayDependency>Number of Curves</DisplayDependency>
+                <DisplayCondition>3</DisplayCondition>
+                <DataTypeValues>Waveform 3,accZ,gyroZ,magnZ</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Waveform 4 Name</Name>
+                <Value></Value>
+                <Description>Name of the waveform 4.</Description>
+                <DisplayDependency>Number of Curves</DisplayDependency>
+                <DisplayCondition>4</DisplayCondition>
+                <DataTypeValues>Waveform 4,,,</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Waveform 5 Name</Name>
+                <Value></Value>
+                <Description>Name of the waveform 5.</Description>
+                <DisplayDependency>Number of Curves</DisplayDependency>
+                <DisplayCondition>5</DisplayCondition>
+                <DataTypeValues>Waveform 5,,,</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Waveform 6 Name</Name>
+                <Value></Value>
+                <Description>Name of the waveform 6.</Description>
+                <DisplayDependency>Number of Curves</DisplayDependency>
+                <DisplayCondition>6</DisplayCondition>
+                <DataTypeValues>Waveform 6,,,</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Unit Name</Name>
+                <Value>g</Value>
+                <Description>Name of graph units.</Description>
+                <DataTypeValues>,g,dps,uT</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>INT</Type>
+                <Name>Zero axis position</Name>
+                <Value>3</Value>
+                <Enum>Bottom=1,Middle=3,Top=5</Enum>
+                <Description>Horizontal position of zero axis.</Description>
+            </Property>
+            <Property>
+                <Type>INT</Type>
+                <Name>Auto-scale</Name>
+                <Value>0</Value>
+                <Enum>OFF=0,ON=1</Enum>
+                <Description>Auto-scale of Y axis enabled.</Description>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Full Scale</Name>
+                <Value>1</Value>
+                <Description>Axis Y full scale. (Format: 2.5 or -1.5:3)</Description>
+            </Property>
+        </Properties>
+        <Memory/>
+        <Command>
+            <Line>Display_Update(%in%);</Line>
+        </Command>
+        <InitCode/>
+        <Function/>
+    </Block>
+    <Block>
+        <Name>Value</Name>
+        <DisplayName>Value</DisplayName>
+        <Version>2.2</Version>
+        <LibName>Display</LibName>
+        <BlockNumber>1</BlockNumber>
+        <Description>Displays up to eight integer values.</Description>
+        <X>-210</X>
+        <Y>-110</Y>
+        <Width>80</Width>
+        <Height>40</Height>
+        <Inputs>
+            <Input>
+                <Type>VARIANT</Type>
+                <Size>%Number of Values%</Size>
+                <Name>in</Name>
+                <Description>Input data to display. The input data size has to match with number of values.</Description>
+                <Node>FSM_MLC_1_mlc_output</Node>
+            </Input>
+        </Inputs>
+        <Outputs/>
+        <Properties>
+            <Property>
+                <Type>INT</Type>
+                <Name>Data Type</Name>
+                <Value>Custom</Value>
+                <Enum>Custom=Custom,Accelerometer=Accelerometer,Gyroscope=Gyroscope,Magnetometer=Magnetometer,Acc and Gyro=Acc and Gyro</Enum>
+                <Description>Enables easy setting of value names and units to apropriate values.</Description>
+            </Property>
+            <Property>
+                <Type>INT</Type>
+                <Name>Number of Values</Name>
+                <Value>1</Value>
+                <Min>1</Min>
+                <Max>8</Max>
+                <Description>Defines number of values to display. Value must be from 1 to 8.</Description>
+                <DataTypeValues>8,3,3,3,6</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Window Name</Name>
+                <Value>klasifikacijski razred</Value>
+                <Description>Label of the values window.</Description>
+                <DataTypeValues>Values,Acceleration,Angular##Rate,Magnetic##Field,Accelero##and Gyro</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Value 1 Name</Name>
+                <Value>klasifikacijski razred</Value>
+                <Description>Label of the value 1.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>1</DisplayCondition>
+                <DataTypeValues>Value 1,accX,gyroX,magnX,accX</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Value 2 Name</Name>
+                <Value>Value 2</Value>
+                <Description>Label of the value 2.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>2</DisplayCondition>
+                <DataTypeValues>Value 2,accY,gyroY,magnY,accY</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Value 3 Name</Name>
+                <Value>Value 3</Value>
+                <Description>Label of the value 3.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>3</DisplayCondition>
+                <DataTypeValues>Value 3,accZ,gyroZ,magnZ,accZ</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Value 4 Name</Name>
+                <Value>Value 4</Value>
+                <Description>Label of the value 4.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>4</DisplayCondition>
+                <DataTypeValues>Value 4,,,,gyroX</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Value 5 Name</Name>
+                <Value>Value 5</Value>
+                <Description>Label of the value 5.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>5</DisplayCondition>
+                <DataTypeValues>Value 5,,,,gyroY</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Value 6 Name</Name>
+                <Value>Value 6</Value>
+                <Description>Label of the value 6.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>6</DisplayCondition>
+                <DataTypeValues>Value 6,,,,gyroZ</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Value 7 Name</Name>
+                <Value>Value 7</Value>
+                <Description>Label of the value 7.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>7</DisplayCondition>
+                <DataTypeValues>Value 7,,,,</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Value 8 Name</Name>
+                <Value>Value 8</Value>
+                <Description>Label of the value 8.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>8</DisplayCondition>
+                <DataTypeValues>Value 8,,,,</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Unit 1 Name</Name>
+                <Value></Value>
+                <Description>Unit of the value 1.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>1</DisplayCondition>
+                <DataTypeValues>,g,dps,uT,g</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Unit 2 Name</Name>
+                <Value></Value>
+                <Description>Unit of the value 2.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>2</DisplayCondition>
+                <DataTypeValues>,g,dps,uT,g</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Unit 3 Name</Name>
+                <Value></Value>
+                <Description>Unit of the value 3.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>3</DisplayCondition>
+                <DataTypeValues>,g,dps,uT,g</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Unit 4 Name</Name>
+                <Value></Value>
+                <Description>Unit of the value 4.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>4</DisplayCondition>
+                <DataTypeValues>,,,,dps</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Unit 5 Name</Name>
+                <Value></Value>
+                <Description>Unit of the value 5.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>5</DisplayCondition>
+                <DataTypeValues>,,,,dps</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Unit 6 Name</Name>
+                <Value></Value>
+                <Description>Unit of the value 6.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>6</DisplayCondition>
+                <DataTypeValues>,,,,dps</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Unit 7 Name</Name>
+                <Value></Value>
+                <Description>Unit of the value 7.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>7</DisplayCondition>
+                <DataTypeValues>,,,,</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+            <Property>
+                <Type>STRING</Type>
+                <Name>Unit 8 Name</Name>
+                <Value></Value>
+                <Description>Unit of the value 8.</Description>
+                <DisplayDependency>Number of Values</DisplayDependency>
+                <DisplayCondition>8</DisplayCondition>
+                <DataTypeValues>,,,,</DataTypeValues>
+                <DataTypeEnabled>1,0,0,0,0</DataTypeEnabled>
+            </Property>
+        </Properties>
+        <Memory/>
+        <Command>
+            <Line>Display_Update(%in%);</Line>
+        </Command>
+        <InitCode/>
+        <Function/>
+    </Block>
+</Project>

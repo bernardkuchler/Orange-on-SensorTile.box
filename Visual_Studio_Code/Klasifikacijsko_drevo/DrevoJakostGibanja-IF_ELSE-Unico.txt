@@ -1,0 +1,26 @@
+import pandas as pd
+dfIzhod = []
+
+def klasifikacija(vhodnaVrednost): 
+	if vhodnaVrednost["F1_VAR_on_ACC_V"] <= 0.050293: 
+		if vhodnaVrednost["F1_VAR_on_ACC_V"] <= 0.00585938: 
+			if vhodnaVrednost["F1_VAR_on_ACC_V"] <= 0.000976563: 
+				if vhodnaVrednost["F1_VAR_on_ACC_V"] <= 0:
+					dfIzhod.append("srednja_jakost") 
+				elif vhodnaVrednost["F1_VAR_on_ACC_V"] > 0:
+					dfIzhod.append("mirovanje") 
+			elif vhodnaVrednost["F1_VAR_on_ACC_V"] > 0.000976563: 
+				if vhodnaVrednost["F1_VAR_on_ACC_V"] <= 0.00390625:
+					dfIzhod.append("mirovanje") 
+				elif vhodnaVrednost["F1_VAR_on_ACC_V"] > 0.00390625: 
+					if vhodnaVrednost["F1_VAR_on_ACC_V"] <= 0.00488281:
+						dfIzhod.append("srednja_jakost") 
+					elif vhodnaVrednost["F1_VAR_on_ACC_V"] > 0.00488281:
+						dfIzhod.append("mirovanje") 
+		elif vhodnaVrednost["F1_VAR_on_ACC_V"] > 0.00585938:
+			dfIzhod.append("srednja_jakost") 
+	elif vhodnaVrednost["F1_VAR_on_ACC_V"] > 0.050293: 
+		if vhodnaVrednost["F1_VAR_on_ACC_V"] <= 0.118164:
+			dfIzhod.append("srednja_jakost") 
+		elif vhodnaVrednost["F1_VAR_on_ACC_V"] > 0.118164:
+			dfIzhod.append("velika_jakost") 

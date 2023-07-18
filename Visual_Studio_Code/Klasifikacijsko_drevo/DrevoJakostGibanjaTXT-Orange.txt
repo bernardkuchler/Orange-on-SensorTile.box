@@ -1,0 +1,11 @@
+
+F1_VAR_on_ACC_V <= 7.60756e-07: mirovanje
+F1_VAR_on_ACC_V > 7.60756e-07
+|   F1_VAR_on_ACC_V <= 0.120615
+|   |   F1_VAR_on_ACC_V <= 0.0457891: srednja_jakost
+|   |   F1_VAR_on_ACC_V > 0.0457891: srednja_jakost
+|   F1_VAR_on_ACC_V > 0.120615: velika_jakost
+
+Number of Leaves  : 	 4
+
+Size of the Tree : 	 7

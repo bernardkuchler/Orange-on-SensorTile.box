@@ -1,0 +1,9 @@
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Middlewares/ST/STM32_USB_Device_Library/Class/CDC_MSC/Src/usbd_cdc_msc.c:569:18:USBD_CDC_MSC_GetFSCfgDesc	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Middlewares/ST/STM32_USB_Device_Library/Class/CDC_MSC/Src/usbd_cdc_msc.c:582:18:USBD_CDC_MSC_GetHSCfgDesc	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Middlewares/ST/STM32_USB_Device_Library/Class/CDC_MSC/Src/usbd_cdc_msc.c:595:18:USBD_CDC_MSC_GetOtherSpeedCfgDesc	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Middlewares/ST/STM32_USB_Device_Library/Class/CDC_MSC/Src/usbd_cdc_msc.c:607:11:USBD_CDC_MSC_GetDeviceQualifierDescriptor	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Middlewares/ST/STM32_USB_Device_Library/Class/CDC_MSC/Src/usbd_cdc_msc.c:106:17:USBD_CDC_MSC_Setup	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Middlewares/ST/STM32_USB_Device_Library/Class/CDC_MSC/Src/usbd_cdc_msc.c:98:17:USBD_CDC_MSC_DeInit	16	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Middlewares/ST/STM32_USB_Device_Library/Class/CDC_MSC/Src/usbd_cdc_msc.c:122:17:USBD_CDC_MSC_DataOut	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Middlewares/ST/STM32_USB_Device_Library/Class/CDC_MSC/Src/usbd_cdc_msc.c:116:17:USBD_CDC_MSC_DataIn	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Jakost_gibanja/projekt/Middlewares/ST/STM32_USB_Device_Library/Class/CDC_MSC/Src/usbd_cdc_msc.c:83:17:USBD_CDC_MSC_Init	16	static

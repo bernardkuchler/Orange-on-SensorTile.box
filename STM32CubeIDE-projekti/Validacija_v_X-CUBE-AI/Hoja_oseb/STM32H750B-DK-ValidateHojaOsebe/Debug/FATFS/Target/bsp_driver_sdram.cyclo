@@ -1,0 +1,6 @@
+bsp_driver_sdram.c:44:16:BSP_SDRAM_Init	1
+bsp_driver_sdram.c:65:16:BSP_SDRAM_ReadData	1
+bsp_driver_sdram.c:84:16:BSP_SDRAM_ReadData_DMA	1
+bsp_driver_sdram.c:107:16:BSP_SDRAM_WriteData	1
+bsp_driver_sdram.c:126:16:BSP_SDRAM_WriteData_DMA	1
+bsp_driver_sdram.c:143:16:BSP_SDRAM_Sendcmd	1

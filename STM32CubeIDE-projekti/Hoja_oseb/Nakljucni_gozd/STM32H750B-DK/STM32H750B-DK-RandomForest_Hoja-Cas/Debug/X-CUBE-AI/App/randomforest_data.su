@@ -1,0 +1,4 @@
+../X-CUBE-AI/App/randomforest_data.c:44:11:ai_randomforest_data_activations_buffer_get	72	static
+../X-CUBE-AI/App/randomforest_data.c:62:11:ai_randomforest_data_weights_buffer_get	72	static
+../X-CUBE-AI/App/randomforest_data.c:80:11:ai_randomforest_data_weights_get	4	static
+../X-CUBE-AI/App/randomforest_data.c:92:9:ai_randomforest_data_params_get	32	static

@@ -1,0 +1,11 @@
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/usbd_desc.c:190:10:USBD_VCP_DeviceDescriptor	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/usbd_desc.c:195:10:USBD_VCP_DeviceDescriptor_C	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/usbd_desc.c:207:10:USBD_VCP_LangIDStrDescriptor	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/usbd_desc.c:219:10:USBD_VCP_ProductStrDescriptor	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/usbd_desc.c:225:10:USBD_VCP_ProductStrDescriptor_C	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/usbd_desc.c:237:10:USBD_VCP_ManufacturerStrDescriptor	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/usbd_desc.c:265:10:USBD_VCP_ConfigStrDescriptor	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/usbd_desc.c:271:10:USBD_VCP_ConfigStrDescriptor_C	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/usbd_desc.c:283:10:USBD_VCP_InterfaceStrDescriptor	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/usbd_desc.c:289:10:USBD_VCP_InterfaceStrDescriptor_C	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/usbd_desc.c:249:10:USBD_VCP_SerialStrDescriptor	0	static

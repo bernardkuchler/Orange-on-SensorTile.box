@@ -1,0 +1,10 @@
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/ab_ble.c:423:6:APP_UserEvtRx	32	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/ab_ble.c:129:6:BLE_handle_Event	184	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/ab_ble.c:204:6:BLE_EXTI_Callback	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/ab_ble.c:215:12:BLE_send_Data	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/ab_ble.c:233:12:BLE_send_Com	16	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/ab_ble.c:269:12:BLE_send_FFT	24	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/ab_ble.c:334:6:Init_BlueNRG_Stack	48	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/ab_ble.c:116:6:BLE_init	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/ab_ble.c:462:6:Init_BlueNRG_Custom_Services	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Project/Src/ab_ble.c:479:6:LedOffTargetPlatform	0	static

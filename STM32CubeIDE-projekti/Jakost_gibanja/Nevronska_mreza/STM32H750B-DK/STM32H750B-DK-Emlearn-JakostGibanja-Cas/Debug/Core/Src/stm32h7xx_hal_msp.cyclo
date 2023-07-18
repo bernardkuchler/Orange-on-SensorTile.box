@@ -1,0 +1,8 @@
+stm32h7xx_hal_msp.c:63:6:HAL_MspInit	1
+stm32h7xx_hal_msp.c:84:6:HAL_ADC_MspInit	3
+stm32h7xx_hal_msp.c:143:6:HAL_ADC_MspDeInit	2
+stm32h7xx_hal_msp.c:174:6:HAL_QSPI_MspInit	3
+stm32h7xx_hal_msp.c:248:6:HAL_QSPI_MspDeInit	2
+stm32h7xx_hal_msp.c:285:6:HAL_TIM_Base_MspInit	2
+stm32h7xx_hal_msp.c:314:6:HAL_TIM_MspPostInit	2
+stm32h7xx_hal_msp.c:346:6:HAL_TIM_Base_MspDeInit	2

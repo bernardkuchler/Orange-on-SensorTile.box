@@ -1,0 +1,13 @@
+randomforest.c:331:9:randomforest_configure_activations	2
+randomforest.c:361:9:randomforest_configure_weights	2
+randomforest.c:433:9:ai_randomforest_get_info	4
+randomforest.c:479:9:ai_randomforest_get_report	4
+randomforest.c:525:10:ai_randomforest_get_error	1
+randomforest.c:531:10:ai_randomforest_create	1
+randomforest.c:541:10:ai_randomforest_create_and_init	8
+randomforest.c:575:12:ai_randomforest_inputs_get	2
+randomforest.c:585:12:ai_randomforest_outputs_get	2
+randomforest.c:595:11:ai_randomforest_destroy	1
+randomforest.c:601:9:ai_randomforest_init	2
+randomforest.c:618:8:ai_randomforest_run	1
+randomforest.c:625:8:ai_randomforest_forward	1

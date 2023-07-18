@@ -1,0 +1,13 @@
+../X-CUBE-AI/App/svm.c:315:9:svm_configure_activations	16	static
+../X-CUBE-AI/App/svm.c:351:9:svm_configure_weights	16	static
+../X-CUBE-AI/App/svm.c:403:9:ai_svm_get_info	144	static
+../X-CUBE-AI/App/svm.c:449:9:ai_svm_get_report	144	static
+../X-CUBE-AI/App/svm.c:495:10:ai_svm_get_error	16	static
+../X-CUBE-AI/App/svm.c:501:10:ai_svm_create	24	static
+../X-CUBE-AI/App/svm.c:511:10:ai_svm_create_and_init	96	static
+../X-CUBE-AI/App/svm.c:545:12:ai_svm_inputs_get	16	static
+../X-CUBE-AI/App/svm.c:555:12:ai_svm_outputs_get	16	static
+../X-CUBE-AI/App/svm.c:565:11:ai_svm_destroy	16	static
+../X-CUBE-AI/App/svm.c:571:9:ai_svm_init	24	static
+../X-CUBE-AI/App/svm.c:588:8:ai_svm_run	24	static
+../X-CUBE-AI/App/svm.c:595:8:ai_svm_forward	16	static

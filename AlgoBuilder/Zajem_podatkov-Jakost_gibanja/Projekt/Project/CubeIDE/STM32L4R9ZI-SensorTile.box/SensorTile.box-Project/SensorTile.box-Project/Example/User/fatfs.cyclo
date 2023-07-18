@@ -1,0 +1,2 @@
+fatfs.c:28:6:FATFS_Init	3
+fatfs.c:42:6:FATFS_Deinit	1

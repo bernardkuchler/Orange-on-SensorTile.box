@@ -1,0 +1,5 @@
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c:39:9:FATFS_LinkDriverEx	8	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c:68:9:FATFS_LinkDriver	4	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c:80:9:FATFS_UnLinkDriverEx	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c:106:9:FATFS_UnLinkDriver	0	static
+F:/FRI_novSSD/Diploma/Diploma-GitHub/AlgoBuilder/Klasifikacijsko_drevo-Hoja_oseb/projekt/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c:116:9:FATFS_GetAttachedDriversNbr	0	static

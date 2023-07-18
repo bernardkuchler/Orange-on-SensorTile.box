@@ -1,0 +1,7 @@
+usbd_msc_bot.c:101:6:MSC_BOT_Init	1
+usbd_msc_bot.c:127:6:MSC_BOT_Reset	1
+usbd_msc_bot.c:145:6:MSC_BOT_DeInit	1
+usbd_msc_bot.c:158:6:MSC_BOT_DataIn	4
+usbd_msc_bot.c:303:7:MSC_BOT_SendCSW	1
+usbd_msc_bot.c:188:6:MSC_BOT_DataOut	22
+usbd_msc_bot.c:355:7:MSC_BOT_CplClrFeature	4
